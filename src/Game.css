@@ -1,0 +1,29 @@
+.Game {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.city {
+    background-image: url(https://www.goodcitizen.us/wp-content/uploads/2020/01/poverty.jpg);
+}
+
+.adoption-home {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/021/637/021/non_2x/abstract-geometric-seamless-background-template-a-fun-and-very-colorful-background-in-all-the-colors-and-shades-of-the-spectrum-light-and-pastel-art-drawing-illustration-eps10-free-vector.jpg);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
