@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Life-Of-Corg/static/css/main.bee49565.css",
+    "main.js": "/Life-Of-Corg/static/js/main.2f3a5282.js",
+    "static/media/home_screen.png": "/Life-Of-Corg/static/media/home_screen.bdcc9f8e5c43877c8e0c.png",
+    "index.html": "/Life-Of-Corg/index.html",
+    "main.bee49565.css.map": "/Life-Of-Corg/static/css/main.bee49565.css.map",
+    "main.2f3a5282.js.map": "/Life-Of-Corg/static/js/main.2f3a5282.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bee49565.css",
+    "static/js/main.2f3a5282.js"
+  ]
+}

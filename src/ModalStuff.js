@@ -7,17 +7,23 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
 import React, { useState } from 'react';
+import './ModalStuff.css';
 
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
+const modalStyle = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    p: 4,
+    borderRadius: 10, // Rounded edges
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "6px"
 };
 
 export default function ModalStuff({ open, choice, onClose }) {
@@ -51,26 +57,34 @@ export default function ModalStuff({ open, choice, onClose }) {
     }
 
     setUpdatedStats(newStats);
-    console.log(newStats);
-
     onClose(newStats);
     setUpdatedStats({ strength: 0, agility: 0, intelligence: 0, happiness: 0 });
   };
 
   const getIcon = (stat) => {
     switch (stat) {
-        case 'strength':
+      case 'strength':
         return <FitnessCenterIcon />;
-        case 'agility':
+      case 'agility':
         return <DirectionsRunIcon />;
-        case 'intelligence':
+      case 'intelligence':
         return <SchoolIcon />;
-        case 'happiness':
+      case 'happiness':
         return <SentimentSatisfiedAltIcon />;
-        default:
+      default:
         return null;
     }
-}
+  }
+
+  const getTitile = () => {
+    if (choice.nextChapter === -1) {
+        return "Game Over";
+    }
+    if (choice.stats.length < 1) {
+      return "No Stats were Changed";
+    }
+    return "Stats Changed:";
+  }
 
   return (
     <div>
@@ -80,22 +94,30 @@ export default function ModalStuff({ open, choice, onClose }) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Stats Changed!
+        <Box sx={modalStyle}>
+          <Typography id="modal-modal-title" variant="h6" component="h2" className="modal-title">
+            {getTitile()}
           </Typography>
           {choice.stats.map((stat, index) => (
-            <div key={index}>
-              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <div key={index} className="stat-change">
+              <Typography id="modal-modal-description" sx={{ mt: 2 }} className="stat-description">
                 <Icon>{getIcon(stat.stat)}</Icon>: {stat.value > 0 ? '+' : ''}
                 {stat.value}
               </Typography>
-              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              <Typography id="modal-modal-description" sx={{ mt: 2 }} className="stat-reasoning">
                 {stat.reasoning}
               </Typography>
+             
             </div>
           ))}
-          <Button onClick={handleClose}>Continue</Button>
+           {choice.nextChapter === -1 ?
+                <Typography id="modal-modal-description" sx={{ mt: 2, textAlign: "center" }} className="stat-reasoning">
+                  {choice.reasoning}
+                </Typography> : null
+              }
+          <Button variant="contained" color="primary" onClick={handleClose} className="continue-button">
+            {choice.nextChapter === -1 ? "Restart" : "Continue"}
+          </Button>
         </Box>
       </Modal>
     </div>

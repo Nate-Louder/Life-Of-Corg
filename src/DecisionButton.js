@@ -1,5 +1,5 @@
 import { Button, Typography } from '@mui/material';
-
+import './Game.css';
 
 const DecisionButton = ({ option, stats, onClick }) => {
 
@@ -7,7 +7,6 @@ const DecisionButton = ({ option, stats, onClick }) => {
         if (!option.requirements) {
             return false;
         }
-        console.log(option.requirements);
         for (const requirement of option.requirements) {
             if (stats[requirement.stat] < requirement.value) {
                 return true;
@@ -26,11 +25,14 @@ const DecisionButton = ({ option, stats, onClick }) => {
         return `: Requires ${requirementList.join(', ')}`;
     }
     const handleClick = () => {
+        if (determineIfClickable()) {
+            return;
+        }
         onClick();
     };
 
     return (
-    <Button size="small" color="primary" disabled={determineIfClickable()} onClick={handleClick}>
+    <Button variant="contained" color="primary" disabled={determineIfClickable()} onClick={handleClick} className='decision-button'>
         <Typography>{option.text}{getRequirements()}</Typography>
     </Button>
     )
