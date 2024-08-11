@@ -2340,9 +2340,170 @@ export const story = {
                     ]
                 }
             ]
-        }
-         
-        
-                                                        
+        },
+        {
+            "chapter": 82,
+            "image": "chapter-82.png",
+            "title": "Freedom and Opportunity",
+            "story": [
+                "With the pound behind you, you run as fast as you can, driven by the thrill of freedom.",
+                "[You]: \"I don’t know where I’m going, but I need to get as far away as possible.\"",
+                "Eventually, exhaustion catches up with you, and you find a quiet spot under a bridge to rest for the night.",
+                "As the morning sun rises, you awaken to the sound of the city coming to life around you.",
+                "Looking around, you notice a newspaper lying nearby. Curious, you start flipping through it until something catches your eye—a section listing a bunch of jobs.",
+                "Feeling powerful and confident after your successful escape, you decide that it’s time to take control of your future. You want to get a job and start a new chapter in your life."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 9,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "The sense of freedom and the prospect of starting fresh fill you with happiness and hope."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 83,
+            "image": "chapter-83.png",
+            "title": "Playing Dead",
+            "story": [
+                "You decide that playing dead is your best chance at getting out of the pound, so you flop onto your back and stay as still as possible.",
+                "[You]: \"Just stay still... they’ll think I’m gone.\"",
+                "After a few minutes, a worker passes by and notices you lying motionless.",
+                "[Worker]: \"Not another one...\"",
+                "With a sigh, they pick you up and carry you out back, not realizing that you’re very much alive.",
+                "Without a second thought, they toss you into the trash can behind the pound and head back inside.",
+                "Feeling a sense of accomplishment, you wait patiently for nightfall, planning to hop out and make your escape under the cover of darkness."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 82,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 2,
+                            "reasoning": "Successfully tricking the worker with your clever plan boosts your intelligence."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 84,
+            "image": "chapter-84.png",
+            "title": "A Missed Opportunity",
+            "story": [
+                "You decide to ignore the old beagle, dismissing him as a delusional dog with nothing useful to offer.",
+                "[You]: \"What does he know anyway?\"",
+                "Eventually, you’re moved into your own kennel, and life in the pound continues as usual.",
+                "One day, a couple stops by and seems interested in you. They ask an employee to take you out so they can get to know you better.",
+                "[Couple]: \"He looks like a sweet dog. Let’s see how he behaves.\"",
+                "Now, you must decide how to interact with them: do you bark and growl to keep them away, or do you try to be friendly and show off some tricks?"
+            ],
+            "options": [
+                {
+                    "text": "Bark and Growl at them",
+                    "nextChapter": 85,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -2,
+                            "reasoning": "Your aggressive behavior pushes away a potential adoption, leaving you feeling isolated and unhappy."
+                        }
+                    ]
+                },
+                {
+                    "text": "Be friendly and perform some tricks",
+                    "nextChapter": 87,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Being friendly and showing off your tricks increases your chances of getting adopted, boosting your happiness."
+                        }
+                    ]
+                }
+            ]
+        },                      
+        {
+            "chapter": 85,
+            "image": "chapter-85.png",
+            "title": "Not What They Were Looking For",
+            "story": [
+                "You decide to be kind and perform some tricks, hoping to impress the couple with your skills.",
+                "[You]: \"Look what I can do!\"",
+                "However, the couple seems disappointed by your friendliness and tricks.",
+                "[Couple]: \"We’re not looking for a circus dog. We need a dog that can protect our home.\"",
+                "They ask the employee to put you back in the kennel, clearly not interested in adopting you.",
+                "As you’re led back to your kennel, you can’t help but think that maybe you should have been a bit more threatening."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 86,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -2,
+                            "reasoning": "The rejection from the couple leaves you feeling disappointed and unhappy."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 86,
+            "image": "chapter-86.png",
+            "title": "A Bittersweet Goodbye",
+            "story": [
+                "After months of being passed over for adoption, you begin to lose hope that you’ll ever leave the pound.",
+                "[You]: \"Maybe this is it... Maybe I’ll never find a home.\"",
+                "Your hairs start to turn gray, and you feel your energy fading with each passing day.",
+                "One day, an employee comes to your cage and gently picks you up. They start petting you, calling you a good dog, as they take you into a medical-looking room.",
+                "[Employee]: \"You’re such a good dog...\"",
+                "They place you on a table, and you feel a sharp prick in your side. The room begins to spin, and a heavy sleepiness starts to take over."
+            ],
+            "options": [
+                {
+                    "text": "Restart",
+                    "nextChapter": -1,
+                    "reasoning": "As the world starts to fade, sense of peace rushes over you as you begin thinking about all the fun you had throughout your life. You had a good life, a long life, and you were everything you needed to be. Suddenly, everything fades to black as you let go.",
+                    "stats": []
+                }
+            ]
+        },
+        {
+            "chapter": 87,
+            "image": "chapter-87.png",
+            "title": "A Perfect Match",
+            "story": [
+                "Deciding to bark and growl at the couple, you put on your most intimidating display.",
+                "[You]: \"If they want a guard dog, I’ll show them I’m the best there is!\"",
+                "The couple seems thrilled by your behavior, exactly what they were hoping for.",
+                "[Couple]: \"This is perfect! He’s just what we’re looking for—a real guard dog!\"",
+                "They call the employee over and eagerly tell her that they’ll take you.",
+                "As you’re led out of the kennel, you can’t help but feel a sense of pride. You’ve found your new role and a home where your protective nature is valued."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 5,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Finding a home where you’re valued for your protective nature brings you happiness and a sense of purpose."
+                        }
+                    ]
+                }
+            ]
+        }        
+                                                          
     ]
 }
