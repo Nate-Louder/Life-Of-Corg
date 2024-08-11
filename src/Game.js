@@ -84,6 +84,7 @@ const Game = ({name, stats, setStats, setProgress}) => {
                                 key={index}
                                 option={choice} 
                                 stats={stats} 
+                                disabled={choice.requirements !== undefined && choice.requirements.some(requirement => stats[requirement.stat] < requirement.value)}
                                 onClick={() => {
                                     setChoiceMade(choice);
                                     setNextChaptered(choice.nextChapter);
@@ -91,7 +92,7 @@ const Game = ({name, stats, setStats, setProgress}) => {
                                 }}
                                 className="decision-button"
                             >
-                                {choice.text}
+                                {choice.text} {choice.requirements ? ` ${choice.requirements.map((requirement) => `(${requirement.stat}: ${requirement.value})`).join(', ')}` : ''}
                             </DecisionButton>
                         ))}
                     </CardActions>

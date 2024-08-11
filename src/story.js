@@ -229,9 +229,16 @@ export const story = {
                         {
                             "stat": "agility",
                             "value": 2,
-                            "reasoning": "Running for it requires speed and agility to outpace the staff."
+                            "reasoning": "Running for it requires speed and agility to outpace the staff.",
+                            
                         }
-                    ]
+                    ],
+                    "requirements": [
+                                {
+                                    "stat": "agility",
+                                    "value": 2,
+                                }
+                            ]
                 },
                 {
                     "text": "Play dead",
@@ -1538,5 +1545,804 @@ export const story = {
                 }
             ]
         },
+        {
+            "chapter": 54,
+            "image": "chapter-54.png",
+            "title": "The Epic Brawl",
+            "story": [
+                "After running into the gang of dogs, you make a bold decision—you’re not backing down. You’re going to fight back.",
+                "With a fierce growl, you launch yourself at the gang leader, determined to show them what you’re made of.",
+                "[Gang Leader]: \"You think you can take me on? Let’s see what you’ve got!\"",
+                "The fight is intense, with you darting around, using your agility and the strength you’ve built up over time.",
+                "In the end, your speed and determination pay off, and you manage to defeat the gang leader, leaving the rest of the gang in awe of your skills."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 61,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": 2,
+                            "reasoning": "Defeating the gang leader in an epic brawl boosts your strength and confidence."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 55,
+            "image": "chapter-55.png",
+            "title": "Joining the Gang",
+            "story": [
+                "Facing the threat of the gang, you decide that it’s safer to join them rather than fight.",
+                "[Gang Leader]: \"Smart choice, but don’t think you’re off the hook. You’ll start at the bottom.\"",
+                "Now a member of the gang, you find yourself at the bottom of the totem pole, stuck with all the boring day-to-day chores.",
+                "Whether it's fetching food or keeping watch, your new life is far from glamorous. You’re constantly reminded of your place in the gang’s hierarchy.",
+                "Despite the rough conditions, you do what’s necessary to survive, hoping that one day you’ll find a way out or rise in the ranks."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 56,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -1,
+                            "reasoning": "The drudgery of the gang life and being stuck at the bottom makes you unhappy."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 56,
+            "image": "chapter-56.png",
+            "title": "The Gang's Demands",
+            "story": [
+                "Life in the gang is tough, and as the lowest-ranking member, you’re constantly pushed around.",
+                "One day, the gang leader demands that you take on a risky heist at the local butcher shop to steal meat for the gang.",
+                "[Gang Leader]: \"You’re gonna prove your worth today. Get in there and bring back the goods, or else.\"",
+                "You know this is a dangerous task, and the pressure is on. Do you risk it all to do the heist, or do you refuse and face the consequences?"
+            ],
+            "options": [
+                {
+                    "text": "Do the heist",
+                    "nextChapter": 57,
+                    "stats": [
+                        {
+                            "stat": "agility",
+                            "value": 1,
+                            "reasoning": "Attempting the heist requires quick thinking and agility to avoid getting caught."
+                        }
+                    ]
+                },
+                {
+                    "text": "Don't do the heist",
+                    "nextChapter": 100,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": -1,
+                            "reasoning": "Refusing the heist shows a lack of resolve, making you feel weaker and less confident."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 57,
+            "image": "chapter-57.png",
+            "title": "The Butcher Shop Heist",
+            "story": [
+                "Reluctantly, you decide to go through with the heist, giving in to the gang leader's demands.",
+                "[You]: \"I don’t have a choice... I have to do this.\"",
+                "As you make your way to the local butcher shop, anxiety builds up inside you. The risks are high, and you can’t help but worry about what might happen if things go wrong.",
+                "The smell of fresh meat fills the air as you approach the shop, and you know it’s time to make your move.",
+                "You try to stay calm, but the fear of getting caught is overwhelming."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 58,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "Planning and executing the heist requires careful thinking and quick decisions, sharpening your intelligence."
+                        }
+                    ]
+                }
+            ]
+        },        
+        {
+            "chapter": 58,
+            "image": "chapter-58.png",
+            "title": "The Temptation",
+            "story": [
+                "With your heart pounding, you sneak into the butcher shop, carefully avoiding the owner’s gaze.",
+                "[You]: \"Just stay calm... you can do this.\"",
+                "Luck seems to be on your side as the owner takes his lunch break, leaving you alone in the shop.",
+                "You take a moment to hide, waiting for the perfect opportunity to strike. As you peek out, you notice something that wasn’t part of the plan—the cash register is open, revealing a stack of money inside.",
+                "Now you’re faced with a difficult choice: do you take the money, or do you stick to the original plan and steal the meat for the gang?"
+            ],
+            "options": [
+                {
+                    "text": "Take the money",
+                    "nextChapter": 59,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "Taking the money requires quick thinking and a calculated risk, increasing your intelligence."
+                        }
+                    ]
+                },
+                {
+                    "text": "Take the meat",
+                    "nextChapter": 60,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": 1,
+                            "reasoning": "Sticking to the plan and stealing the meat shows your resolve and loyalty to the gang, boosting your strength."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 59,
+            "image": "chapter-59.png",
+            "title": "A Risky Decision",
+            "story": [
+                "Deciding that the money is worth more than the meat, you quickly grab the cash from the register.",
+                "[You]: \"They’re not going to like this... I’d better not go back.\"",
+                "Panic sets in as you realize the gang won’t be happy with your decision, so you make a split-second choice to take the money and run.",
+                "As you flee, your mind races with possibilities. You know the gang will be after you, but then you pass by a casino and a daring plan forms in your mind.",
+                "[You]: \"If I can just double this money, I might be able to escape for good...\""
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 10,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "Making the quick decision to take the money and devise a new plan on the run sharpens your mind."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 60,
+            "image": "chapter-60.png",
+            "title": "A Successful Heist",
+            "story": [
+                "Sticking to the plan, you grab the meat from the butcher shop and make a dash for it, your heart racing as you sprint towards the exit.",
+                "[Butcher]: \"Hey! Get back here!\"",
+                "You hear the owner shout as he returns from his break, but by the time he realizes what’s happened, you’re already gone.",
+                "With the meat in your possession, you head back to the gang, feeling a mix of fear and excitement.",
+                "[Gang Leader]: \"Well, well, look who pulled it off!\"",
+                "The gang is surprised—and impressed—that you succeeded, and they’re so pleased with your performance that they even consider making you the leader."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 61,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": 2,
+                            "reasoning": "Successfully completing the heist and gaining the gang’s respect boosts your strength and confidence."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 61,
+            "image": "chapter-61.png",
+            "title": "The Offer",
+            "story": [
+                "The gang is extremely impressed with your success and loyalty. After seeing your abilities, they decide to offer you the position of gang leader.",
+                "[Gang Leader]: \"You’ve proven yourself, and now it’s time for you to take the reins. What do you say?\"",
+                "A sense of pride washes over you—this is a huge opportunity, a chance to lead. But with that pride comes a wave of nervousness. What if you’re not up to the challenge? What if this is more than you can handle?",
+                "With the offer on the table, you need to decide: will you take on the responsibility and become the leader, or will you leave the gang behind and forge your own path?"
+            ],
+            "options": [
+                {
+                    "text": "Become the leader",
+                    "nextChapter": 62,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": 2,
+                            "reasoning": "Taking on the leadership role requires courage and strength, boosting your confidence and power."
+                        }
+                    ]
+                },
+                {
+                    "text": "Leave the gang",
+                    "nextChapter": 63,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Choosing to leave the gang brings you peace and happiness, as you avoid the pressures and dangers of leadership."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 62,
+            "image": "chapter-62.png",
+            "title": "Leading the Pack",
+            "story": [
+                "You decide to accept the offer and become the new leader of the gang.",
+                "[You]: \"Alright, let’s do this. I’m ready to lead!\"",
+                "With the other dogs rallying behind you, you feel a surge of confidence and power. This is your chance to make a real impact, to shape the gang into something greater.",
+                "But with leadership comes responsibility, and now you must decide which direction you want to take the gang.",
+                "Will you use your newfound power for good, turning the gang into a force for positive change? Or will you lead them down a darker path, using your influence for personal gain?"
+            ],
+            "options": [
+                {
+                    "text": "For good",
+                    "nextChapter": 66,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Choosing to lead the gang for good fills you with a sense of purpose and fulfillment, boosting your happiness."
+                        }
+                    ]
+                },
+                {
+                    "text": "For bad",
+                    "nextChapter": 65,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": 2,
+                            "reasoning": "Leading the gang down a darker path enhances your strength and power, but at a moral cost."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 63,
+            "image": "chapter-63.png",
+            "title": "A New Beginning",
+            "story": [
+                "Deciding that leadership isn’t for you, you leave the gang behind, feeling a deep sense of relief.",
+                "[You]: \"I don’t think I could have handled all that responsibility... It’s better this way.\"",
+                "The weight of the day’s events begins to take its toll on you. Your body feels heavy, and your mind is exhausted from everything that has happened.",
+                "As you wander through the streets, you eventually find yourself at the doorstep of a small, cozy house.",
+                "Too tired to continue, you curl up on the doorstep and quickly fall asleep, hoping that tomorrow will bring new opportunities and a fresh start."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 64,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Leaving the gang and finding a moment of peace fills you with happiness and relief."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 64,
+            "image": "chapter-64.png",
+            "title": "A Kind Gesture",
+            "story": [
+                "The next morning, you wake up on the doorstep of the small house, feeling the warmth of the sun on your fur.",
+                "Before you can fully gather your thoughts, a kind man opens the door and sees you lying there.",
+                "[Man]: \"Hey there, little one. You must’ve had a rough night. Let’s get you inside and see if you’re okay.\"",
+                "He gently picks you up, his hands warm and comforting, and carries you inside the house.",
+                "As he checks on you, you feel a sense of safety and comfort that you haven’t felt in a long time."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 5,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Being taken in and cared for fills you with happiness and a sense of security."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 65,
+            "image": "chapter-65.png",
+            "title": "A Life of Infamy",
+            "story": [
+                "Embracing the darker path, you lead the gang with ruthless efficiency, performing dozens of heists around the city.",
+                "[You]: \"No one messes with us now. We’re the biggest and baddest gang in town.\"",
+                "Over the years, you recruit the toughest dogs in the city, and your gang becomes notorious, feared by everyone.",
+                "As time passes, you accumulate massive wealth, and your reputation as the scariest gang leader grows.",
+                "But as you grow older, the thrill of the heist starts to fade, and you decide it’s time to step down.",
+                "Passing the torch to a younger dog, you take your wealth and plan to live out your remaining years in peace, away from the chaos you once thrived in."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 8,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": 2,
+                            "reasoning": "Leading the gang to power and accumulating wealth strengthens your resolve and influence."
+                        },
+                        {
+                            "stat": "happiness",
+                            "value": -2,
+                            "reasoning": "Despite your success, the life of crime leaves you feeling hollow and unfulfilled."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 66,
+            "image": "chapter-66.png",
+            "title": "A Life Well-Lived",
+            "story": [
+                "Choosing to lead the gang on a righteous path, you steer them away from crime and towards helping the community.",
+                "[You]: \"We’ll make our mark by doing good and protecting those who can’t protect themselves.\"",
+                "Under your leadership, the gang earns money in honest ways, building a positive reputation in the city as protectors of the weak and champions of justice.",
+                "As the years go by, you feel a deep sense of happiness and fulfillment, knowing that you’ve made a difference.",
+                "But as you grow older, the strength that once defined you begins to fade, and you start to feel the weight of age.",
+                "Sickness comes upon you, and as you lie down, you realize that your time is nearing its end. But you are at peace, knowing that you’ve lived a life of purpose."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 101,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 3,
+                            "reasoning": "Leading the gang to do good and building a positive legacy fills you with profound happiness."
+                        },
+                        {
+                            "stat": "strength",
+                            "value": -2,
+                            "reasoning": "The years of leadership and growing older have taken a toll on your physical strength."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 67,
+            "image": "chapter-67.png",
+            "title": "A New Addition",
+            "story": [
+                "Life in your new home has been wonderful. The couple who adopted you have given you love and care, and you feel truly happy.",
+                "But one day, everything changes. The couple is gone longer than usual, and when they return, they’re not alone—they’ve brought home a small human.",
+                "[You]: \"What is this tiny creature? And why are they giving it all the attention?\"",
+                "As the days go by, you notice that the baby seems to be getting more of the love and attention that used to be yours, and it starts to make you feel angry.",
+                "One day, the kid is crawling around on the floor and comes up to you. This is the moment—how will you react?"
+            ],
+            "options": [
+                {
+                    "text": "Get mad and growl",
+                    "nextChapter": 72,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -2,
+                            "reasoning": "The frustration of losing attention to the baby leads to a decrease in your happiness."
+                        }
+                    ]
+                },
+                {
+                    "text": "Try to befriend the kid",
+                    "nextChapter": 68,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Choosing to befriend the kid helps you feel more included and boosts your happiness."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 68,
+            "image": "chapter-68.png",
+            "title": "A Growing Bond",
+            "story": [
+                "When the kid crawls up to you, you decide to be friendly and start licking him. The kid bursts into laughter, and you can’t help but wag your tail in joy.",
+                "[You]: \"This isn’t so bad after all!\"",
+                "The attention you’ve been missing is suddenly back, and you find yourself loving every moment of it.",
+                "Over time, you and the kid grow closer, and as he gets older, your bond only strengthens.",
+                "Though you feel sad when he leaves for school, your heart soars with happiness when he returns, bringing with him stories of the day.",
+                "Soon, he starts taking you with him to his activities, and together, you create countless memories that you’ll cherish forever."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 69,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 3,
+                            "reasoning": "Building a strong bond with the kid fills you with happiness and contentment."
+                        }
+                    ]
+                }
+            ]
+        },        
+        {
+            "chapter": 69,
+            "image": "chapter-69.png",
+            "title": "The High School Years",
+            "story": [
+                "As the years pass, you and the kid grow up together, but things start to change when he enters high school.",
+                "He's around less and less, spending more time with friends and dedicating himself to playing football.",
+                "[You]: \"I miss the days when we spent all our time together...\"",
+                "One day, he invites you to come along to his football practice. You feel a bit tired—age is catching up with you—but the desire to spend time with him is strong.",
+                "This is a tough decision: do you push through your fatigue and go with him, or do you stay home to rest?"
+            ],
+            "options": [
+                {
+                    "text": "Go with him",
+                    "nextChapter": 70,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": -1,
+                            "reasoning": "Going with him despite your tiredness takes a toll on your strength, but you do it out of love."
+                        },
+                        {
+                            "stat": "happiness",
+                            "value": 1,
+                            "reasoning": "Spending time with him, even when you're tired, brings you joy and contentment."
+                        }
+                    ]
+                },
+                {
+                    "text": "Stay home",
+                    "nextChapter": 61,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": 1,
+                            "reasoning": "Staying home allows you to rest and preserve your strength."
+                        },
+                        {
+                            "stat": "happiness",
+                            "value": -1,
+                            "reasoning": "Missing out on time with him leaves you feeling a bit lonely and sad."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 70,
+            "image": "chapter-70.png",
+            "title": "Love at First Sight",
+            "story": [
+                "Despite your tiredness, you decide to go with the kid to his football practice, and when you arrive, you notice that some of the other players have brought their dogs as well.",
+                "You start playing with them, enjoying the company, but something catches your eye—another corgi, just like you.",
+                "[You]: \"Who is that? They’re beautiful...\"",
+                "Feeling starstruck, you immediately make your way over to introduce yourself.",
+                "The two of you hit it off instantly, and as you spend more time together, you realize that you’ve fallen in love."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 77,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 3,
+                            "reasoning": "Meeting another corgi and falling in love brings you immense joy and fulfillment."
+                        }
+                    ]
+                }
+            ]
+        },        
+        {
+            "chapter": 71,
+            "image": "chapter-71.png",
+            "title": "A Dangerous Snack",
+            "story": [
+                "Deciding to stay home while the kid goes to practice, you soon find yourself alone in the house.",
+                "As you wander around, your nose picks up a delicious scent—freshly baked brownies sitting on the counter.",
+                "[You]: \"Those smell amazing... just a little taste won’t hurt.\"",
+                "You maneuver your way up and devour the entire tray, savoring every bite, but soon after, you start to feel sick.",
+                "At first, you shrug it off, thinking it will pass, but as time goes on, the sickness gets worse and worse, and you begin to worry."
+            ],
+            "options": [
+                {
+                    "text": "Restart",
+                    "nextChapter": -1,
+                    "reasoning": "Of course you can't eat brownies. You are a dog, and brownies contain a lot of chocolate. You are also fairly old, and your body can't handle the chocolate. You pass away.",
+                    "stats": []
+                }
+            ]
+        },
+        {
+            "chapter": 72,
+            "image": "chapter-72.png",
+            "title": "A New Rivalry",
+            "story": [
+                "You decide that the baby is wrong for stealing your attention. You were here first, and now the kid is taking the parents away from you.",
+                "[You]: \"This isn’t fair... I need to do something about this.\"",
+                "When the baby crawls up to you, you growl and snarl, baring your teeth. The baby’s eyes widen in fear, and he starts to cry.",
+                "Seeing the baby’s reaction gives you a sense of power, but it also feels like the beginning of a new rivalry. You’re determined to get revenge on the kid.",
+                "Now you need to decide how to strike back: do you break something and blame the kid, or do you find a way to scare him?"
+            ],
+            "options": [
+                {
+                    "text": "Break something and blame the kid",
+                    "nextChapter": 74,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "Using cunning to frame the kid requires clever thinking, boosting your intelligence."
+                        }
+                    ]
+                },
+                {
+                    "text": "Scare the kid",
+                    "nextChapter": 73,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": 1,
+                            "reasoning": "Scaring the kid and asserting dominance boosts your strength and confidence."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 73,
+            "image": "chapter-73.png",
+            "title": "A Change of Heart",
+            "story": [
+                "You come up with a plan to scare the kid, hoping to make him cry or run away.",
+                "[You]: \"This will show him who’s boss around here!\"",
+                "But when you finally execute your plan, the kid just laughs and wraps his tiny arms around you in a hug.",
+                "At first, you try to wiggle free, feeling trapped by this unexpected reaction, but then something changes. The warmth of the hug starts to feel... nice.",
+                "Slowly, you begin to embrace the moment, licking the kid and playing with him. The anger fades, and you find yourself growing fond of the kid.",
+                "From that day on, you start to create new memories together, forming a bond that surprises you both."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 69,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 3,
+                            "reasoning": "Forming a bond with the kid fills you with unexpected joy and happiness."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 74,
+            "image": "chapter-74.png",
+            "title": "A Mischievous Plan",
+            "story": [
+                "Determined to get revenge, you decide to break something and make it look like the kid did it.",
+                "[You]: \"This will teach them to ignore me!\"",
+                "You spot a delicate vase near where the kid is sitting and, with a swift move, you knock it over, shattering it into pieces.",
+                "The loud crash brings the mom running into the room. She sees the broken vase and the kid sitting nearby, assuming he must have done it.",
+                "[Mom]: \"Oh no, what have you done? This was very naughty!\"",
+                "As the kid is scolded, you feel a sense of accomplishment and pride in the success of your plan."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 75,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 2,
+                            "reasoning": "Successfully framing the kid for the broken vase boosts your cunning and intelligence."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 75,
+            "image": "chapter-75.png",
+            "title": "A Cycle of Mischief",
+            "story": [
+                "Encouraged by the success of your first attempt, you decide to keep getting the kid in trouble.",
+                "[You]: \"If it worked once, it’ll work again!\"",
+                "Time after time, you set up little traps and blame the kid, and each time, the parents scold him, unaware of your involvement.",
+                "As the kid gets older, the constant scolding starts to wear on him, creating a deep sense of resentment.",
+                "He begins acting out on purpose, misbehaving just to spite his parents. Soon, you realize that you no longer need to get involved—he’s doing all the work for you."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 76,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "Continuing to manipulate the situation sharpens your cunning and intelligence."
+                        },
+                        {
+                            "stat": "happiness",
+                            "value": -1,
+                            "reasoning": "The kid’s growing resentment and negative behavior create an unsettling atmosphere, affecting your happiness."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 76,
+            "image": "chapter-76.png",
+            "title": "A Bittersweet Ending",
+            "story": [
+                "By the time the kid is a teenager, his behavior has spiraled out of control, and the parents decide to send him to boarding school.",
+                "[You]: \"I didn’t mean for things to go this far...\"",
+                "At first, you feel a pang of guilt, but the increased attention from the parents quickly makes that feeling fade.",
+                "For the next several years, you live happily with your two owners, enjoying their affection and care. You only see the kid occasionally when he comes home, but for the most part, it’s just the three of you.",
+                "As time passes, you begin to notice gray hairs appearing in your fur, and everyday activities start to leave you feeling more tired than before.",
+                "You realize that you’re getting older, but the love and comfort of your home keep you content."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 101,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 1,
+                            "reasoning": "The increased attention from your owners brings you happiness, even as you grow older."
+                        },
+                        {
+                            "stat": "strength",
+                            "value": -1,
+                            "reasoning": "Aging and the physical toll of time start to weaken your strength."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 77,
+            "image": "chapter-77.png",
+            "title": "A Night Out",
+            "story": [
+                "Your love for your new friend grows stronger with each week you see her at the kid's football practices.",
+                "[You]: \"I can’t wait to see her again. Maybe we should do something special together...\"",
+                "One night, you make a plan with her to sneak out after your owners have gone to sleep and explore the town together.",
+                "Excited, you meet her outside her owner's house, and the two of you start brainstorming ideas for your adventure.",
+                "With the city at your paws, you need to decide where to go: should you enjoy a peaceful stroll in the park, or take in the sights from the top of a building?"
+            ],
+            "options": [
+                {
+                    "text": "Park",
+                    "nextChapter": 78,
+                    "stats": []
+                },
+                {
+                    "text": "Top of a Building",
+                    "nextChapter": -1,
+                    "reasoning": "You get to the opposite side of the street from where the building is and start to cross without looking both ways. After two steps you hear a horn blast, but it is too late. You are hit by a bus.",
+                    "stats": []
+                }
+            ]
+        },
+        {
+            "chapter": 78,
+            "image": "chapter-78.png",
+            "title": "A Night in the Park",
+            "story": [
+                "You and your love make your way to the park under the cover of night, the moonlight guiding your steps.",
+                "[You]: \"This is perfect. Just the two of us and the whole park to ourselves.\"",
+                "As soon as you arrive, the two of you start running around, playing, and chasing fireflies. The joy of the moment fills you both with excitement.",
+                "You almost catch a firefly in your mouth when suddenly you bump into her. You both pause, your eyes meeting under the soft glow of the moonlight.",
+                "Without thinking, you lean in and give her a gentle dog kiss on the nose. She responds with a playful nuzzle, and for a moment, it feels like nothing else in the world matters. <**Censored**>",
+                "Later, as the night winds down and you’re walking her back, she gives you some surprising news: she’s pregnant, and you’re going to be a father.",
+                "[You]: \"Puppies? I can hardly believe it...\""
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 7,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 3,
+                            "reasoning": "The news of becoming a father fills you with overwhelming joy and excitement."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 79,
+            "image": "chapter-79.png",
+            "title": "A Failed Escape",
+            "story": [
+                "Deciding to make a run for it from the pound during your walk, you wait for the perfect moment.",
+                "[You]: \"This is my chance... I just need to be quick!\"",
+                "The employee gets distracted, and you seize the opportunity, shaking free from your collar and bolting away.",
+                "But just as you start to gain speed, your paws slip, and you trip, tumbling to the ground.",
+                "[Employee]: \"Hey! Get back here!\"",
+                "Before you can recover, the employee catches up to you, scolding you as he puts you back on the leash.",
+                "Defeated, you’re led back to the pound, realizing that your escape attempt has failed."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 80,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -2,
+                            "reasoning": "The failure of your escape attempt and being scolded leaves you feeling sad and defeated."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 81,
+            "image": "chapter-81.png",
+            "title": "A Plan for Freedom",
+            "story": [
+                "You decide to listen to the old beagle, and as you hear him out, you begin to like him. Despite the rough circumstances, the two of you become friends.",
+                "[Beagle]: \"You’re a good kid. I can teach you a few things about surviving in here.\"",
+                "He mentors you, giving you tips on how to hold your own in the pound. Over time, you start to feel more confident and prepared for whatever comes your way.",
+                "One day, the beagle shares a secret with you—he’s come up with a plan to break out, but he’s too old to pull it off himself.",
+                "[Beagle]: \"I’ve been watching this place for years, and I know every crack and crevice. Here’s the plan...\"",
+                "The beagle explains his elaborate escape plan in detail. You’ll need to wait for the right moment when the night shift guard is dozing off. There’s a loose panel at the back of the kennel that leads to a narrow tunnel. You’ll have to squeeze through it, avoid the motion sensors in the corridor, and then make a run for the open gate before it closes for the night.",
+                "[Beagle]: \"You’ve got the speed and the wits to make it out, kid. Just remember, timing is everything.\"",
+                "With your new friend’s guidance, you execute the plan perfectly, navigating the obstacles and making a daring escape under the cover of darkness.",
+                "As you dash through the open gate, you hear the beagle’s voice in your head, cheering you on.",
+                "[You]: \"I did it! I’m free!\""
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 82,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 2,
+                            "reasoning": "Successfully executing the elaborate escape plan boosts your intelligence and confidence."
+                        },
+                        {
+                            "stat": "agility",
+                            "value": 1,
+                            "reasoning": "Navigating the obstacles during the escape enhances your agility and quick thinking."
+                        }
+                    ]
+                }
+            ]
+        }
+         
+        
+                                                        
     ]
 }

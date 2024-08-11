@@ -7,7 +7,7 @@ import Home from './Home';
 function App() {
   const startingStats = {
     strength: 0,
-    agility: 0,
+    agility: 5,
     intelligence: 0,
     happiness: 0,
   };
