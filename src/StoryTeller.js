@@ -22,8 +22,7 @@ const StoryTeller = ({ story, name, onStoryEnd }) => {
     };
 
     const parseStory = (storyText) => {
-        if (!storyText) return ''; // Add a guard clause
-        console.log(storyText);
+        if (!storyText) return '';
         const boldRegex = /\[(.*?)\]/g;
         const parsedStory = storyText.replace(/<name>/g, name).replace(boldRegex, "<strong>$1</strong>");
         return <Typography className="story-text" dangerouslySetInnerHTML={{ __html: parsedStory }} />;

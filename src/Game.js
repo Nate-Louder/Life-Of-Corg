@@ -1,5 +1,6 @@
 import { Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import DecisionButton from './DecisionButton.js';
 import './Game.css';
 import ModalStuff from './ModalStuff.js';
@@ -7,7 +8,7 @@ import StatTracker from './StatTracker.js';
 import { story } from './story.js';
 import StoryTeller from './StoryTeller.js';
 
-const Game = ({name, stats, setStats, setProgress}) => {
+const Game = ({name, stats, setStats, setProgress, setStoryList}) => {
 
     const [currentChapter, setCurrentChapter] = useState(1);
     const [nextChaptered, setNextChaptered] = useState(0);
@@ -21,23 +22,28 @@ const Game = ({name, stats, setStats, setProgress}) => {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
 
+    const navigate = useNavigate();
+
     const handleNext = (newStats) => {
         let nextChapter;
         if (nextChaptered === -1) {
             setStats(-stats.strength, -stats.agility, -stats.intelligence, -stats.happiness);
             nextChapter = story.chapters[0];
+            navigate('/Life-Of-Corg/overview');
         }
         else {
             setStats(newStats.strength, newStats.agility, newStats.intelligence, newStats.happiness);
             nextChapter = story.chapters[nextChaptered];
+            setStoryList(nextChapter);
+            setCurrentChapter(nextChapter.chapter);
+            setCurrentTitle(nextChapter.title || '');
+            setCurrentImage(nextChapter.image || '');
+            setCurrentStory(nextChapter.story || []);
+            setCurrentChoices(nextChapter.options || []);
         }
+        
         setOpen(false);
         setOptionsAreAvailable(false);
-        setCurrentChapter(nextChapter.chapter);
-        setCurrentTitle(nextChapter.title || '');
-        setCurrentImage(nextChapter.image || '');
-        setCurrentStory(nextChapter.story || []);
-        setCurrentChoices(nextChapter.options || []);
     };
 
     const getBgImage = () => {

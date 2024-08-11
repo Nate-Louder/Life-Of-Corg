@@ -57,7 +57,7 @@ export const story = {
                 },
                 {
                     "text": "Explore UC",
-                    "nextChapter": 12,
+                    "nextChapter": 26,
                     "stats": [
                         {
                             "stat": "agility",
@@ -68,7 +68,7 @@ export const story = {
                 },
                 {
                     "text": "Explore the Reds stadium",
-                    "nextChapter": 13,
+                    "nextChapter": 25,
                     "stats": [
                         {
                             "stat": "happiness",

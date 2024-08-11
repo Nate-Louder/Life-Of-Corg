@@ -116,7 +116,7 @@ export default function ModalStuff({ open, choice, onClose }) {
                 </Typography> : null
               }
           <Button variant="contained" color="primary" onClick={handleClose} className="continue-button">
-            {choice.nextChapter === -1 ? "Restart" : "Continue"}
+            {choice.nextChapter === -1 ? "End Game" : "Continue"}
           </Button>
         </Box>
       </Modal>

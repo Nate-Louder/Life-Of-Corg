@@ -3,11 +3,12 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import Game from './Game';
 import Home from './Home';
+import ResetPage from './ResetPage';
 
 function App() {
   const startingStats = {
     strength: 0,
-    agility: 5,
+    agility: 0,
     intelligence: 0,
     happiness: 0,
   };
@@ -16,6 +17,7 @@ function App() {
   const [stats, setStats] = useState(startingStats);
   const [progress, setProgress] = useState("start");
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
+  const [storyList, setStoryList] = useState([]);
 
   const audioRef = useRef(null);
 
@@ -47,16 +49,29 @@ function App() {
 
   useEffect(() => {
     if (audioRef.current) {
+      audioRef.current.pause(); // Pause the audio before changing the source
       audioRef.current.src = songs[currentSongIndex];
+      audioRef.current.load(); // Load the new audio source
+      audioRef.current.play().catch((error) => {
+        // Handle the error if playback fails
+        console.error("Playback failed:", error);
+      });
     }
   }, [currentSongIndex]);
 
   const handleNext = (name) => {
     setStats(startingStats);
+    setStoryList([])
     setName(name);
+  };
+
+  const handledStart = () => {
     if (audioRef.current) {
-      audioRef.current.src = songs[currentSongIndex]; // Set the source when starting the game
-      audioRef.current.play(); // Ensure the audio starts playing when starting the game
+      audioRef.current.src = songs[currentSongIndex];
+      audioRef.current.load();
+      audioRef.current.play().catch((error) => {
+        console.error("Playback failed:", error);
+      });
     }
   };
 
@@ -69,13 +84,19 @@ function App() {
     });
   };
 
+  const addToStoryList = (storyItem) => {
+    setStoryList([...storyList, storyItem]);
+    console.log(storyList);
+  };
+
   return (
     <Router>
       <div className="App">
         <audio ref={audioRef} loop={false} />
         <Routes>
-          <Route path="/Life-Of-Corg" element={<Home onNext={(name) => handleNext(name)} />} />
-          <Route path="/Life-Of-Corg/game" element={<Game name={name} stats={stats} progress={progress} setStats={handleStatChange} setProgress={setProgress} />} />
+          <Route path="/Life-of-Corg" element={<Home onNext={(name) => handleNext(name) } onStartClicked={handledStart} />} />
+          <Route path="/Life-of-Corg/game" element={<Game name={name} stats={stats} progress={progress} setStats={handleStatChange} setProgress={setProgress} setStoryList={addToStoryList}/>} />
+          <Route path="/Life-of-Corg/overview" element={<ResetPage storyList={storyList} stats={stats}/>} />
         </Routes>
       </div>
     </Router>
