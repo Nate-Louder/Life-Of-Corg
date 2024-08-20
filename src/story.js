@@ -2503,7 +2503,653 @@ export const story = {
                     ]
                 }
             ]
-        }        
+        },        
+        {
+            "chapter": 88,
+            "image": "chapter-88.png",
+            "title": "Doing Good with Your Wealth",
+            "story": [
+                "With your newfound wealth, you decide that you want to use it to make a positive impact in the world.",
+                "[You]: \"I have all this money... it’s time to do some good with it.\"",
+                "You start searching for charities and causes to donate to, determined to make a difference.",
+                "One day, while browsing online, you come across an ad for a non-profit that promises to do four times as much good with your donation than anyone else could.",
+                "[You]: \"This sounds too good to be true... but maybe it’s worth the risk?\"",
+                "Now, you need to decide: do you take a chance and donate to this seemingly promising non-profit, or do you take your money elsewhere?"
+            ],
+            "options": [
+                {
+                    "text": "Donate to it",
+                    "nextChapter": 109,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": -1,
+                            "reasoning": "Taking a risk on a dubious non-profit without thoroughly investigating it first may lead to unforeseen consequences."
+                        }
+                    ]
+                },
+                {
+                    "text": "Take your money elsewhere",
+                    "nextChapter": 110,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "Choosing to investigate other options shows wisdom and careful consideration, boosting your intelligence."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 89,
+            "image": "chapter-89.png",
+            "title": "Living in the Fast Lane",
+            "story": [
+                "Deciding that you want to have some fun with your wealth, you head straight to the Lamborghini dealership.",
+                "[You]: \"I’m going to enjoy this money while I can!\"",
+                "With a confident stride, you drop your bag of dough on the counter. The car salesman’s eyes widen in shock, but a smile quickly spreads across his face.",
+                "[Salesman]: \"Right this way! I have just the car for you.\"",
+                "He leads you to the most expensive model in the showroom—a sleek, powerful machine that looks like it was made just for you.",
+                "You slide into the driver’s seat, and everything about it feels right.",
+                "[You]: \"I’ll take it!\"",
+                "Without a second thought, you drive it off the lot, feeling the thrill of the open road and the wind in your fur."
+            ],
+            "options": [
+                {
+                    "text": "Restart",
+                    "nextChapter": -1,
+                    "reasoning": "You dont know how to drive. You immediately crash into a building. Luckily no one inside was hurt but you didn’t get so lucky.",
+                    "stats": []
+                }
+            ]
+        },
+        {
+            "chapter": 90,
+            "image": "chapter-90.png",
+            "title": "Investing for the Future",
+            "story": [
+                "You love the feeling of being rich, and you decide that you want to be even richer.",
+                "[You]: \"I’ve got a taste of wealth, and now I want more!\"",
+                "Rather than spending your money right away, you think that investing it is the best path forward.",
+                "Two options catch your eye: the stock market, which seems like a steady choice, and Dodge Coin, a cryptocurrency that promises to make you wealthier than you can imagine.",
+                "[You]: \"The stock market is reliable, but Dodge Coin... that could be my ticket to the big leagues.\"",
+            "Now you need to decide where to invest your money: will you go with the traditional stock market or take a gamble on Dodge Coin?"
+            ],
+            "options": [
+                {
+                    "text": "Dodge Coin",
+                    "nextChapter": 103,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": -1,
+                            "reasoning": "Investing in a highly volatile and speculative cryptocurrency carries significant risk, potentially leading to losses."
+                        }
+                    ]
+                },
+                {
+                    "text": "Stock Market",
+                    "nextChapter": 104,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "Investing in the stock market is a more stable and informed decision, increasing your financial acumen."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 91,
+            "image": "chapter-91.png",
+            "title": "The Gamble Pays Off",
+            "story": [
+                "Your heart pounds in your chest as you sit in the casino chair, shoving all of your chips onto the black square on the roulette table.",
+                "[You]: \"This is it... everything rides on this.\"",
+                "The dealer calls for all bets to be placed as he spins the wheel. You watch the ball as it spins round and round, the tension building with each rotation.",
+                "It feels like hours pass, but finally, the ball begins to slow down. It bounces a few times before landing on black.",
+                "[You]: \"I did it! I hit black!\"",
+            "The guy next to you, who bet on red, is furious, but you feel like a million dollars.",
+                "Now, you have to decide what to do next: do you let it ride and try to win even more, or do you take your earnings and leave while you’re ahead?"
+            ],
+            "options": [
+                {
+                    "text": "Let it ride",
+                    "nextChapter": 98,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "The thrill of winning and taking risks gives you a rush of excitement and happiness."
+                        },
+                        {
+                            "stat": "intelligence",
+                            "value": -1,
+                            "reasoning": "Continuing to gamble without taking your winnings can be risky, potentially leading to losses."
+                        }
+                    ]
+                },
+                {
+                    "text": "Take your earnings and leave",
+                    "nextChapter": 114,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "Choosing to take your winnings and leave shows restraint and wise decision-making."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 92,
+            "image": "chapter-92.png",
+            "title": "A Devastating Loss",
+            "story": [
+                "Your heart pounds in your chest as you sit in the casino chair, shoving all of your chips onto the red square on the roulette table.",
+                "[You]: \"This is my moment... red all the way.\"",
+                "The dealer calls for all bets to be placed as he spins the wheel. You watch the ball spin round and round, the anticipation almost unbearable.",
+                "It feels like hours pass, but finally, the ball begins to slow down. It bounces a few times before landing on black.",
+                "[You]: \"No... this can’t be happening.\"",
+                "Your heart hits the floor as the reality sets in—you’ve lost everything.",
+                "The thrill of the gamble is replaced with a sinking feeling of defeat."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 115,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -3,
+                            "reasoning": "Losing everything in a single bet leaves you devastated and deeply unhappy."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 93,
+            "image": "chapter-93.png",
+            "title": "A New Career as a Bouncer",
+            "story": [
+                "With your decision made, you decide to become a bouncer. The strength you’ve built up over time will be perfect for a job in the security industry.",
+                "[You]: \"I’ve got the muscle for this—let’s see what it’s like to keep things in order.\"",
+                "You head to the local bar where you’re greeted by the manager, who hands you your equipment and uniform.",
+                "[Manager]: \"Here’s your gear. You’ll be on the door for the evening shift starting tomorrow.\"",
+                "You feel a sense of pride as you put on your uniform, knowing that your strength and presence will be key to maintaining order at the bar."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 124,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": 2,
+                            "reasoning": "The physical demands of being a bouncer further enhance your strength."
+                        },
+                        {
+                            "stat": "happiness",
+                            "value": 1,
+                            "reasoning": "Starting a new job that fits your abilities gives you a sense of purpose and satisfaction."
+                        }
+                    ]
+                }
+            ]
+        },                
+        {
+            "chapter": 94,
+            "image": "chapter-94.png",
+            "title": "The Investment Banker Life",
+            "story": [
+                "Managing millions of dollars can’t be that hard, right? You think to yourself as you consider your new career as an investment banker.",
+                "[You]: \"This is going to be easy money!\"",
+                "You head to the bank, where your boss gives you the rundown of your day-to-day responsibilities.",
+                "[Boss]: \"Just put a little money here, and a little money there. It’s all about balancing the risks and rewards.\"",
+                "As your boss explains, it sounds simpler and simpler. Your confidence grows, and you’re sure that this job will be a breeze.",
+                "However, before you dive in, you need to decide what you’ll specialize in: will you focus on Real Estate, or do you want to help Small Businesses grow?"
+            ],
+            "options": [
+                {
+                    "text": "Real Estate",
+                    "nextChapter": 139,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 2,
+                            "reasoning": "Specializing in Real Estate requires sharp analytical skills and a good understanding of market trends, boosting your intelligence."
+                        }
+                    ]
+                },
+                {
+                    "text": "Small Businesses",
+                    "nextChapter": 140,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Helping small businesses grow and succeed brings you a sense of fulfillment and happiness."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 95,
+            "image": "chapter-95.png",
+            "title": "A Perfect Fit: Barista",
+            "story": [
+                "With your laid-back and sociable personality, you decide that becoming a barista will be the perfect job for you.",
+                "[You]: \"There’s nothing like starting someone’s day with a hot cup of coffee and a smile!\"",
+                "You apply to the local coffee shop, excited about the idea of meeting new people and making their mornings a little brighter.",
+                "The thought of working in a cozy café, surrounded by the rich aroma of freshly brewed coffee, fills you with anticipation.",
+                "[You]: \"This is going to be fun—I can’t wait to start!\"",
+                "As you prepare for your first day, you look forward to the simple joys of helping people kick-start their day."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 141,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Working as a barista, interacting with customers, and enjoying a relaxed atmosphere boosts your happiness."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 96,
+            "image": "chapter-96.png",
+            "title": "A Proud Parent",
+            "story": [
+                "Ever since you were young, you dreamed of becoming a parent and raising a family of your own.",
+                "[You]: \"I’ve always wanted to be a parent, and now my dream is coming true!\"",
+                "When the time comes, you’re blessed with five adorable puppies, each one full of energy and personality.",
+                "Your heart swells with pride as you look at your growing family.",
+                "[You]: \"Five puppies... that’s more than I expected, but I’m up for the challenge!\"",
+                "Though it’s more work than you anticipated, the joy and happiness that comes from raising your puppies is greater than anything you’ve ever experienced.",
+                "You know there will be challenges ahead, but you’re confident that you can raise them to be outstanding, grown dogs."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 143,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 3,
+                            "reasoning": "The joy of raising a family and the love you feel for your puppies brings immense happiness."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 97,
+            "image": "chapter-97.png",
+            "title": "A Tough Decision",
+            "story": [
+                "You always wanted to be a parent, but when you’re faced with the reality of raising five puppies, it becomes overwhelming.",
+                "[You]: \"I love them, but five puppies is more than I can handle at my age... They deserve homes where they can be properly cared for.\"",
+                "Realizing that you can’t provide everything they need, you make the difficult decision to find them new homes.",
+                "You gently place them all into a basket with a blanket, making sure they’re warm and comfortable.",
+                "[You]: \"This is for the best... They’ll have better lives this way.\"",
+                "Dragging the basket to the local fire station, you bark to get someone’s attention. As you hear a man come out to investigate, you slip away into the night, knowing that they’ll be taken care of."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 142,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -2,
+                            "reasoning": "The sadness of parting with your puppies leaves you feeling heartbroken, but you know it’s the right decision."
+                        },
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "Recognizing your limitations and making the tough choice shows wisdom and maturity, boosting your intelligence."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 98,
+            "image": "chapter-98.png",
+            "title": "Letting It Ride",
+            "story": [
+                "You didn’t come to the casino just to leave with a few extra bucks in your pocket. The thrill of the gamble has you hooked, and you decide to let it ride.",
+                "[You]: \"Black has been good to me so far... let’s see if my luck holds out!\"",
+                "You push all your chips onto the black square once again, feeling the excitement and tension build.",
+                "As the dealer spins the wheel, you watch the ball begin to roll, the familiar anxiety creeping in as it bounces around.",
+                "[You]: \"Did I make the right decision?\"",
+                "Your heart races as you wait to see where the ball will land."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 122,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 1,
+                            "reasoning": "The adrenaline rush from taking a risk keeps your excitement and happiness high."
+                        },
+                        {
+                            "stat": "intelligence",
+                            "value": -1,
+                            "reasoning": "Continuing to gamble without caution can be risky, potentially leading to losses."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 99,
+            "image": "chapter-99.png",
+            "title": "A Trip to the Cincinnati Zoo",
+            "story": [
+                "You’ve heard a lot about the Cincinnati Zoo from famous figures like Harambe, so you decide that the zoo would be the perfect place to explore while in Cincinnati.",
+                "[You]: \"I’ve got to check this place out—it's supposed to be amazing!\"",
+                "As you enter the zoo, you start talking to some of the smaller animals near the entrance. They seem a bit grumpy, but you can’t help but think they have a nice, easy life, just laying around all day.",
+                "[You]: \"You guys have it made—no worries, just lounging around in the sun.\"",
+                "But their grumbles suggest they’re not as content as you thought.",
+                "After a brief chat, you decide to head further into the zoo, curious to see what other animals and adventures await."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 27,
+                    "stats": []
+                }
+            ]
+        },
+        {
+            "chapter": 100,
+            "image": "chapter-100.png",
+            "title": "A Dangerous Refusal",
+            "story": [
+                "The leader of the dog gang does not take kindly to your refusal to join their ranks. His eyes narrow, and he gives a subtle nod to some of the bigger dogs in the gang.",
+                "[Gang Leader]: \"You don’t get to walk away after disrespecting us.\"",
+                "Before you know it, the larger dogs begin to circle you, their eyes filled with menace. They inch closer, and you can feel the tension in the air.",
+                "[You]: \"This isn’t good...\"",
+                "You realize that nothing good is about to happen as the gang surrounds you, their intentions clear."
+            ],
+            "options": [
+                {
+                    "text": "Restart",
+                    "nextChapter": -1,
+                    "reasoning": "You get jumped, and the larger dogs start wailing on you. The weight of the larger dogs on top of you and the beating you take is too much, and you eventually succumb to your injuries.",
+                    "stats": []
+                }
+            ]
+        },                        
+        {
+            "chapter": 101,
+            "image": "chapter-101.png",
+            "title": "A Life Well Lived",
+            "story": [
+                "You’ve reached the age where even the simplest tasks have become difficult. You’re aware that your life is nearing its end, and though it saddens you, there’s a sense of peace within you.",
+                "[You]: \"I’ve lived a good life, full of joy and love. I’ve given and received so much happiness.\"",
+                "Although this life may be ending, you hold on to the hope that whatever comes next will be just as wonderful, if not better.",
+                "Your breaths grow shallow, and you begin to count them down, each one a reminder of the life you’ve lived.",
+                "As you reach zero, a flash of memories rushes through your mind—every adventure, every friend, every moment of love.",
+                "Then, everything fades to black."
+            ],
+            "options": [
+                {
+                    "text": "Restart",
+                    "nextChapter": -1,
+                    "reasoning": "You had a great life and you had a big impact in the lives of many. Good game!",
+                    "stats": []
+                }
+            ]
+        },
+        {
+            "chapter": 102,
+            "image": "chapter-102.png",
+            "title": "A Loving Home",
+            "story": [
+                "As time passes, you grow incredibly fond of the family that brought you into their home. Their love and care make you feel like you truly belong.",
+                "[You]: \"This is the life I’ve always wanted—full of love and happiness.\"",
+                "Together, you create lasting memories, whether it’s on exciting trips across the country or cozy stay-in movie nights at home.",
+                "Every moment spent with them reinforces the bond you share, and you feel grateful for the joy and comfort they bring into your life.",
+                "[You]: \"These are the best days of my life, and I wouldn’t trade them for anything.\""
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 67,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 3,
+                            "reasoning": "The deep connection and happiness you feel with your family bring you immense joy."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 103,
+            "image": "chapter-103.png",
+            "title": "The Rollercoaster of Dodge Coin",
+            "story": [
+                "Deciding to stay true to your species’ love of risk, you invest your large sum of money into Dodge Coin, hoping to strike it rich.",
+                "[You]: \"This could be the start of something huge!\"",
+                "A few days later, the cryptocurrency takes a massive hit, and panic sets in. You’re not alone—hundreds of people online are also panicking.",
+                "[You]: \"What have I done?! I should’ve stuck with something safer...\"",
+                "But amidst the chaos, many are advising to stay strong and hold the investment.",
+                "After much internal debate, you decide to hold, choosing to avoid checking the market for a while.",
+                "Several weeks later, you finally take a peek at your investment, and to your amazement, Dodge Coin has skyrocketed in value.",
+                "[You]: \"I can’t believe it... I’ve struck gold!\""
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 105,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 3,
+                            "reasoning": "Seeing your risky investment pay off brings a wave of excitement and happiness."
+                        },
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "The experience teaches you the importance of patience and resilience in investing."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 105,
+            "image": "chapter-105.png",
+            "title": "The Unimaginable Wealth",
+            "story": [
+                "After making an unfathomable amount of money on Dodge Coin, you find yourself overwhelmed by the sheer magnitude of your wealth.",
+                "[You]: \"What do I even do with all this money?\"",
+                "At first, you indulge in some absurd luxuries, like sleeping on piles of cash or even burning it for fun, just to see what it feels like.",
+                "But soon, your entrepreneurial spirit kicks in, and you start investing in some up-and-coming businesses, becoming a majority shareholder in five companies.",
+                "These companies quickly rise to prominence, each becoming massive successes.",
+                "[You]: \"I’ve built an empire! I have more money than anyone could ever imagine.\"",
+                "You’ve achieved the pinnacle of financial success, with wealth that few could ever dream of."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 106,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "The thrill of building an empire and having unimaginable wealth brings you a unique sense of satisfaction."
+                        },
+                        {
+                            "stat": "intelligence",
+                            "value": 2,
+                            "reasoning": "Successfully managing and investing in multiple companies sharpens your business acumen and intelligence."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 106,
+            "image": "chapter-106.png",
+            "title": "The Weight of Wealth",
+            "story": [
+                "Your enormous wealth has grown to the point where it’s beyond your comprehension. With the ability to buy anything you desire, you start to lose the drive and satisfaction that once fueled your ambitions.",
+                "[You]: \"What’s the point of it all when I already have everything?\"",
+                "Days begin to blur together as you waste time, struggling to find motivation to even get up from your cash-filled bed.",
+                "Despite your riches, you start feeling lonely in your massive mansion, with no one to share it with.",
+                "[You]: \"Is this really what I wanted? To be alone with nothing but money?\"",
+                "As the years go by, you grow old and struggle to manage your empire. The businesses that once brought you pride now feel like a burden.",
+                "In the end, you decide to sell all of your assets, using the money to find some semblance of purpose and comfort before your time comes to an end."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 101,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -3,
+                            "reasoning": "The overwhelming loneliness and lack of purpose that comes with unimaginable wealth leave you feeling deeply unfulfilled."
+                        },
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "The experience of managing an empire teaches you hard lessons about the emptiness that can accompany unchecked wealth."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 107,
+            "image": "chapter-107.png",
+            "title": "From Riches to Rags",
+            "story": [
+                "After losing all of your money in the stock market collapse, you find yourself on the streets with nothing but your shattered dignity.",
+                "[You]: \"How did it all go so wrong? I had everything...\"",
+                "As you walk down the street, you notice people recognizing you.",
+                "[Passerby]: \"Isn’t that the corgi that was once extremely rich? What a fall from grace...\"",
+                "The whispers and stares are hard to ignore, and you feel the weight of their judgment as they see you not as the successful dog you once were, but as an embarrassment.",
+                "[You]: \"I never thought it would come to this...\""
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 108,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -3,
+                            "reasoning": "The loss of wealth and public embarrassment leave you feeling deeply unhappy and humiliated."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 108,
+            "image": "chapter-108.png",
+            "title": "A Last Chance",
+            "story": [
+                "As you walk the streets, memories of your past wealth flood your mind. Suddenly, you remember something.",
+                "[You]: \"Wait... I left a small stash of cash under my mattress back at the house!\"",
+                "With renewed hope, you make your way back to the home you lost, hoping to retrieve the money before everything is repossessed.",
+                "Carefully, you sneak into the house, making your way up to the bedroom. Your heart races as you lift the mattress, and to your delight, the cash is still there.",
+                "[You]: \"It’s not much, but it’s something... and I know just where to take it.\"",
+                "With the small amount of cash in hand, you decide to head to the casino, hoping to turn your fortune around."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 10,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 1,
+                            "reasoning": "Finding the cash gives you a glimmer of hope and a chance to reclaim your lost fortune."
+                        }
+                    ]
+                }
+            ]
+        },                     
+        {
+            "chapter": 109,
+            "image": "chapter-109.png",
+            "title": "A Costly Mistake",
+            "story": [
+                "Convinced by the ad you saw online, you decide to donate to the charity, believing that they can do far more good with your money than you could on your own.",
+                "[You]: \"If what they’re saying is true, this could help so many people. It’s worth the risk.\"",
+                "Several weeks go by, but you hear nothing back from the company. A sense of unease begins to settle in.",
+                "One morning, you wake up and decide to check your bank account, only to find that it has been completely drained.",
+                "[You]: \"No... this can’t be happening. How could I have been so foolish?\"",
+                "The realization hits hard—you’ve been hacked, and they’ve taken everything, leaving you with nothing."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 107,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -3,
+                            "reasoning": "Losing everything to a scam leaves you devastated and deeply unhappy."
+                        },
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "The harsh experience teaches you a valuable lesson about caution and trust, increasing your intelligence."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 110,
+            "image": "chapter-110.png",
+            "title": "A Wise Decision",
+            "story": [
+                "Feeling suspicious of the ad you saw online, especially after reaching out to them and getting no response, you decide to trust your instincts.",
+                "[You]: \"Something doesn’t feel right about this... I should be careful with my money.\"",
+                "Instead of donating to the questionable non-profit, you choose to give your money to charitable organizations that you believe in.",
+                "As you become more involved, you start learning about the best ways to help people and make a real impact.",
+                "[You]: \"I can do more than just donate... I can make a difference myself.\"",
+                "Inspired by what you’ve learned, you gather some like-minded individuals who are just as passionate about making a difference, and together, you decide to start your own foundation."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 111,
+                    "stats": [
+                        {
+                            "stat": "intelligence",
+                            "value": 2,
+                            "reasoning": "Your cautious approach and willingness to get involved personally increase your understanding and intelligence."
+                        },
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Starting your own foundation and working towards a cause you believe in brings you joy and fulfillment."
+                        }
+                    ]
+                }
+            ]
+        },                                                           
                                                           
     ]
 }
