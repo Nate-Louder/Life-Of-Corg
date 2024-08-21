@@ -21,14 +21,23 @@ function App() {
 
   const audioRef = useRef(null);
 
-  const songs = [
+  let songs = [
     `${process.env.PUBLIC_URL}/angel-of-morn.mp3`,
-    `${process.env.PUBLIC_URL}/like-prayer.mp3`
+    `${process.env.PUBLIC_URL}/good-life.mp3`,
+    `${process.env.PUBLIC_URL}/beauty-day.mp3`,
+    `${process.env.PUBLIC_URL}/unwritten.mp3`,
+    `${process.env.PUBLIC_URL}/my-life.mp3`,
+    `${process.env.PUBLIC_URL}/green-day.mp3`,
+    `${process.env.PUBLIC_URL}/comes-sun.mp3`,
+    `${process.env.PUBLIC_URL}/life-is-a-highway.mp3`,
+    `${process.env.PUBLIC_URL}/walk-on-sun.mp3`,
   ];
+
+  songs = songs.sort(() => Math.random() - 0.5);
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.5; // Set volume to 50%
+      audioRef.current.volume = 0.3; // Set volume to 30%
       audioRef.current.addEventListener('ended', handleSongEnd);
     }
 
@@ -94,9 +103,9 @@ function App() {
       <div className="App">
         <audio ref={audioRef} loop={false} />
         <Routes>
-          <Route path="/Life-of-Corg" element={<Home onNext={(name) => handleNext(name) } onStartClicked={handledStart} />} />
-          <Route path="/Life-of-Corg/game" element={<Game name={name} stats={stats} progress={progress} setStats={handleStatChange} setProgress={setProgress} setStoryList={addToStoryList}/>} />
-          <Route path="/Life-of-Corg/overview" element={<ResetPage storyList={storyList} stats={stats}/>} />
+          <Route path="/Life-of-Corg" element={<Home onNext={(name) => handleNext(name)} onStartClicked={handledStart} />} />
+          <Route path="/Life-of-Corg/game" element={<Game name={name} stats={stats} progress={progress} setStats={handleStatChange} setProgress={setProgress} setStoryList={addToStoryList} />} />
+          <Route path="/Life-of-Corg/overview" element={<ResetPage storyList={storyList} stats={stats} />} />
         </Routes>
       </div>
     </Router>
