@@ -1,11 +1,10 @@
-import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import React, { useEffect, useState } from "react";
 import "./StoryTeller.css";
 
 const StoryTeller = ({ story, name, onStoryEnd }) => {
     const [currentPage, setCurrentPage] = useState(0);
-    
+
     useEffect(() => {
         if (story && story.length > 0) {
             setCurrentPage(0);
@@ -25,11 +24,11 @@ const StoryTeller = ({ story, name, onStoryEnd }) => {
         if (!storyText) return '';
         const boldRegex = /\[(.*?)\]/g;
         const parsedStory = storyText.replace(/<name>/g, name).replace(boldRegex, "<strong>$1</strong>");
-        return <Typography className="story-text" dangerouslySetInnerHTML={{ __html: parsedStory }} />;
+        return <span className="story-text" dangerouslySetInnerHTML={{ __html: parsedStory }} />;
     };
 
     if (!story || story.length === 0) {
-        return <Typography className="story-text">No story available.</Typography>;
+        return <span className="story-text">No story available.</span>;
     }
 
     return (

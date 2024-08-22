@@ -6,7 +6,7 @@ import './ResetPage.css';
 import StatTracker from './StatTracker';
 import StoryDescriptionImage from './StoryDescriptionImage';
 
-const ResetPage = ({storyList, stats}) => {
+const ResetPage = ({ storyList, stats }) => {
 
     const navigate = useNavigate();
 
@@ -18,24 +18,21 @@ const ResetPage = ({storyList, stats}) => {
 
     return (
         <div className="ResetPage">
-            <Card className='overview' sx={{position: 'relative', overflow:'visible'}}>
-            <StatTracker final={true} stats={stats} />
+            <Card className='overview' sx={{ position: 'relative', overflow: 'visible' }}>
+                <StatTracker final={true} stats={stats} />
                 <CardContent>
-                    <Typography variant='h3' sx={{color: "#FE6B8B"}}>Game Over</Typography>
+                    <Typography variant='h3' sx={{ color: "#FE6B8B" }}>Game Over</Typography>
                     <Typography variant='h5' sx={{}}>Here is a summary of your journey:</Typography>
                     <div className="chapter-wrapper">
-                        <Card className="chapters" sx={{boxShadow: "none"}}>
-                        <CardContent sx={{overflowY: "auto", display: "flex", flexDirection: "column", gap: "16px", scrollbarWidth: "none"}}>
-                                {storyList.map((chapter, index) => 
-                                    <StoryDescriptionImage image={chapter.image} title={chapter.title}/>)}
-                            </CardContent>
-                            
-                        </Card>
+                        <div className="chapters">
+                            {storyList.map((chapter, index) =>
+                                <StoryDescriptionImage image={chapter.image} title={chapter.title} />)}
+                        </div>
                     </div>
                 </CardContent>
                 <Button className="restart-button" variant="outlined" onClick={handleClick}>Go Back to Start</Button>
             </Card>
-            
+
         </div>
     );
 }

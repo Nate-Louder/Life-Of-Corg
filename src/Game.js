@@ -1,4 +1,4 @@
-import { Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
+import { Card, CardActions, CardContent, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import DecisionButton from './DecisionButton.js';
@@ -8,7 +8,7 @@ import StatTracker from './StatTracker.js';
 import { story } from './story.js';
 import StoryTeller from './StoryTeller.js';
 
-const Game = ({name, stats, setStats, setProgress, setStoryList}) => {
+const Game = ({ name, stats, setStats, setProgress, setStoryList }) => {
 
     const [currentChapter, setCurrentChapter] = useState(1);
     const [nextChaptered, setNextChaptered] = useState(0);
@@ -16,7 +16,7 @@ const Game = ({name, stats, setStats, setProgress, setStoryList}) => {
     const [currentImage, setCurrentImage] = useState(story.chapters[0].image || '');
     const [currentStory, setCurrentStory] = useState(story.chapters[0].story || []);
     const [currentChoices, setCurrentChoices] = useState(story.chapters[0].options || []);
-    const [choiceMade, setChoiceMade] = useState({stats: []});
+    const [choiceMade, setChoiceMade] = useState({ stats: [] });
     const [optionsAreAvailable, setOptionsAreAvailable] = useState(false);
 
     const [open, setOpen] = useState(false);
@@ -27,7 +27,6 @@ const Game = ({name, stats, setStats, setProgress, setStoryList}) => {
     const handleNext = (newStats) => {
         let nextChapter;
         if (nextChaptered === -1) {
-            setStats(-stats.strength, -stats.agility, -stats.intelligence, -stats.happiness);
             nextChapter = story.chapters[0];
             navigate('/Life-Of-Corg/overview');
         }
@@ -41,7 +40,7 @@ const Game = ({name, stats, setStats, setProgress, setStoryList}) => {
             setCurrentStory(nextChapter.story || []);
             setCurrentChoices(nextChapter.options || []);
         }
-        
+
         setOpen(false);
         setOptionsAreAvailable(false);
     };
@@ -50,61 +49,47 @@ const Game = ({name, stats, setStats, setProgress, setStoryList}) => {
         switch (currentChapter) {
             case 1:
                 return 'background1';
-            default: 
+            default:
                 return 'background1';
         }
     };
 
     return (
         <div className={`Game ${getBgImage()}`}>
-            <Card className="player-card" sx={{borderRadius: "20px"}}>
-                <CardContent sx={{alignItems: "center", display: "flex", gap: ".5rem", justifyContent: "center"}}>
-                    <Typography variant="h4" sx={{fontWeight: 600, textAlign: "center"}}>
-                        The Adventures of
-                    </Typography>
-                    <Typography variant="h4" color={"#FE6B8B"} sx={{fontWeight: 600, textAlign: "center"}}>
-                        {name}
-                    </Typography>
-                </CardContent>
-            </Card>
-            <Card className="story-card" sx={{overflow: "visible", borderRadius: "20px"}}>
-                <StatTracker stats={stats}/>
-                <CardContent>
+            <StatTracker stats={stats} />
+            <Card className="story-card" sx={{ width: '100vw', height: '100vh', overflow: "visible", borderRadius: "20px", backgroundImage: `url(${currentImage})` }}>
+                <CardContent className="story-title-wrapper">
                     <Typography variant="h4" fontWeight={700} className="story-title" color={'#FF8E53'}>
                         {currentTitle}
                     </Typography>
                 </CardContent>
-                <CardMedia
-                    component="img"
-                    height="450"
-                    image={currentImage}
-                    className="story-image"
-                />
-                <CardContent>
-                    <StoryTeller story={currentStory} name={name} onStoryEnd={() => {setOptionsAreAvailable(true)}}/>
-                </CardContent>
-                {optionsAreAvailable && (
-                    <CardActions className="choices-container">
-                        {currentChoices.map((choice, index) => (
-                            <DecisionButton 
-                                key={index}
-                                option={choice} 
-                                stats={stats} 
-                                disabled={choice.requirements !== undefined && choice.requirements.some(requirement => stats[requirement.stat] < requirement.value)}
-                                onClick={() => {
-                                    setChoiceMade(choice);
-                                    setNextChaptered(choice.nextChapter);
-                                    handleOpen();
-                                }}
-                                className="decision-button"
-                            >
-                                {choice.text} {choice.requirements ? ` ${choice.requirements.map((requirement) => `(${requirement.stat}: ${requirement.value})`).join(', ')}` : ''}
-                            </DecisionButton>
-                        ))}
-                    </CardActions>
-                )}
+                <div className="story-wrapper">
+                    <CardContent>
+                        <StoryTeller story={currentStory} name={name} onStoryEnd={() => { setOptionsAreAvailable(true) }} />
+                    </CardContent>
+                    {optionsAreAvailable && (
+                        <CardActions className="choices-container">
+                            {currentChoices.map((choice, index) => (
+                                <DecisionButton
+                                    key={index}
+                                    option={choice}
+                                    stats={stats}
+                                    disabled={choice.requirements !== undefined && choice.requirements.some(requirement => stats[requirement.stat] < requirement.value)}
+                                    onClick={() => {
+                                        setChoiceMade(choice);
+                                        setNextChaptered(choice.nextChapter);
+                                        handleOpen();
+                                    }}
+                                    className="decision-button"
+                                >
+                                    {choice.text} {choice.requirements ? ` ${choice.requirements.map((requirement) => `(${requirement.stat}: ${requirement.value})`).join(', ')}` : ''}
+                                </DecisionButton>
+                            ))}
+                        </CardActions>
+                    )}
+                </div>
             </Card>
-            <ModalStuff open={open} choice={choiceMade} onClose={handleNext}/>
+            <ModalStuff open={open} choice={choiceMade} onClose={handleNext} />
         </div>
     );
 };

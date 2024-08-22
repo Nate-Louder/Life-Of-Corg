@@ -205,7 +205,7 @@ export const story = {
             "options": [
                 {
                     "text": "Continue",
-                    "nextChapter": 66,
+                    "nextChapter": 102,
                     "stats": []
                 }
             ]
@@ -370,7 +370,7 @@ export const story = {
                 },
                 {
                     "text": "Bouncer",
-                    "nextChapter": 96,
+                    "nextChapter": 93,
                     "stats": [
                         {
                             "stat": "strength",
@@ -1222,7 +1222,7 @@ export const story = {
             "image": "chapter-42.png",
             "title": "A Visit to Central Park Zoo",
             "story": [
-                "With your stolen hotdog devoured, you notice that you're near the Central Park Zoo.",
+                "After arriving in central park you notice that you're near the Central Park Zoo.",
                 "Curiosity gets the better of you, and you decide to head inside to see if it’s anything like the Madagascar movie you’ve heard about.",
                 "[You]: \"Maybe I'll run into some penguins or a lion!\"",
                 "You wander through the zoo, taking in the sights and sounds, marveling at the various animals and the lively atmosphere.",
@@ -2017,7 +2017,7 @@ export const story = {
                 },
                 {
                     "text": "Stay home",
-                    "nextChapter": 61,
+                    "nextChapter": 71,
                     "stats": [
                         {
                             "stat": "strength",
@@ -3009,6 +3009,38 @@ export const story = {
             ]
         },
         {
+            "chapter": 104,
+            "image": "chapter-104.png",
+            "title": "A Safe Bet Gone Wrong",
+            "story": [
+                "Wanting to play it safe, you decide to invest your large sum of money into the stock market, confident that this cautious approach will pay off.",
+                "[You]: \"This is the smart move. No need to take unnecessary risks.\"",
+                "Feeling secure in your decision, you take a long hiatus from technology and head off on a three-month vacation, disconnecting entirely from the outside world.",
+                "You spend your days relaxing, not a worry in your mind about your investments back home.",
+                "But when you finally return and check your portfolio, your heart sinks. The market has collapsed, and everything you invested in has gone to zero.",
+                "[You]: \"How could this happen? I thought I was being smart...\"",
+                "Left with nothing, you’re forced to face the harsh reality of your situation."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 107,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -3,
+                            "reasoning": "Losing everything despite trying to play it safe leaves you devastated and deeply unhappy."
+                        },
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "The experience teaches you that even safe bets carry risks, adding to your understanding of the financial world."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "chapter": 105,
             "image": "chapter-105.png",
             "title": "The Unimaginable Wealth",
@@ -3633,6 +3665,50 @@ export const story = {
             ]
         },
         {
+            "chapter": 127,
+            "image": "chapter-127.png",
+            "title": "Thrown Across the Bar",
+            "story": [
+                "In the midst of the chaos, you suddenly feel yourself being grabbed by the scruff of your neck. Before you can react, you’re lifted off the ground.",
+                "[You]: \"What the—?!\"",
+                "You catch a glimpse of the man holding you—a towering brute with a bald head, tattoos snaking up his thick arms, and a sneer on his face.",
+                "[Brute]: \"Outta my way, mutt!\"",
+                "With a grunt, he hurls you across the bar like a ragdoll. You fly through the air, crashing into a table and sliding into the wall. The impact rattles you, leaving you dazed and struggling to get your bearings.",
+                "[You]: \"Ugh... I can’t let it end like this...\"",
+                "The sounds of the brawl continue to rage around you, and you’re left with a choice—run for the door and escape, or get back in there and try to regain control."
+            ],
+            "options": [
+                {
+                    "text": "Run Out of the Bar",
+                    "nextChapter": 125,
+                    "stats": [
+                        {
+                            "stat": "agility",
+                            "value": 1,
+                            "reasoning": "Quickly deciding to escape and avoid further harm demonstrates your agility and quick thinking."
+                        }
+                    ]
+                },
+                {
+                    "text": "Get Back in There",
+                    "nextChapter": 128,
+                    "stats": [
+                        {
+                            "stat": "strength",
+                            "value": 1,
+                            "reasoning": "Despite the injury, your determination to get back into the fray shows your physical resilience."
+                        },
+                        {
+                            "stat": "happiness",
+                            "value": -1,
+                            "reasoning": "The rough treatment and chaotic situation take a toll on your mood, but you’re not ready to give up."
+                        }
+                    ]
+                }
+            ]
+        }
+        ,
+        {
             "chapter": 128,
             "image": "chapter-128.png",
             "title": "Back Into the Fray",
@@ -4010,11 +4086,6 @@ export const story = {
                             "value": 1,
                             "reasoning": "Helping a family achieve their dream brings you a sense of personal fulfillment."
                         },
-                        {
-                            "stat": "wealth",
-                            "value": -1,
-                            "reasoning": "The potential returns are modest, and there's a higher risk involved with a personal family project."
-                        }
                     ]
                 },
                 {
@@ -4025,11 +4096,6 @@ export const story = {
                             "stat": "intelligence",
                             "value": 2,
                             "reasoning": "Choosing a well-researched and strategically sound project reflects your sharp decision-making skills."
-                        },
-                        {
-                            "stat": "wealth",
-                            "value": 2,
-                            "reasoning": "The project has high potential for significant financial returns."
                         },
                         {
                             "stat": "happiness",
@@ -4067,11 +4133,6 @@ export const story = {
                             "reasoning": "Backing a business in a growing market reflects your keen understanding of trends and customer demand."
                         },
                         {
-                            "stat": "wealth",
-                            "value": 2,
-                            "reasoning": "The dog salon has high potential for substantial returns, especially in a booming industry."
-                        },
-                        {
                             "stat": "happiness",
                             "value": 1,
                             "reasoning": "Supporting a business that caters to pet lovers brings a sense of personal joy."
@@ -4092,11 +4153,6 @@ export const story = {
                             "value": 1,
                             "reasoning": "Supporting a niche market shows a nuanced understanding of unique customer segments, though the risk is higher."
                         },
-                        {
-                            "stat": "wealth",
-                            "value": -1,
-                            "reasoning": "The DVD store carries more financial risk due to the decline of physical media, making it a less secure investment."
-                        }
                     ]
                 }
             ]
@@ -4148,31 +4204,10 @@ export const story = {
             ],
             "options": [
                 {
-                    "text": "Go Up to Him",
-                    "nextChapter": 169,
-                    "stats": [
-                        {
-                            "stat": "happiness",
-                            "value": 2,
-                            "reasoning": "The chance to reconnect with your pup brings a rush of joy and fulfillment, despite the bittersweet emotions."
-                        },
-                        {
-                            "stat": "intelligence",
-                            "value": 1,
-                            "reasoning": "Choosing to face your past and the emotions tied to it shows maturity and growth."
-                        }
-                    ]
-                },
-                {
-                    "text": "Run Away",
-                    "nextChapter": 170,
-                    "stats": [
-                        {
-                            "stat": "happiness",
-                            "value": -2,
-                            "reasoning": "Turning away from the opportunity to reconnect leaves you with lingering regret and sadness."
-                        }
-                    ]
+                    "text": "Restart",
+                    "nextChapter": -1,
+                    "stats": [],
+                    "reasoning": "Erm... I kind of ran out of time I’m sorry. I promise this is the only ending this bad. A meteor falls from the sky and wipes out the planet. Sry"
                 }
             ]
         },
@@ -4285,11 +4320,6 @@ export const story = {
                             "value": 3,
                             "reasoning": "The joy and gratitude of the family bring you a deep sense of fulfillment and happiness."
                         },
-                        {
-                            "stat": "kindness",
-                            "value": 2,
-                            "reasoning": "Choosing to help the family reflects your compassion and willingness to make a positive impact on others' lives."
-                        }
                     ]
                 }
             ]
@@ -4803,11 +4833,489 @@ export const story = {
                     ]
                 }
             ]
+        },
+        {
+            "chapter": 161,
+            "image": "chapter-161.png",
+            "title": "Lost at the Fairgrounds",
+            "story": [
+                "You decide to take the puppies to the fairgrounds, thinking it will be a fun place for them to explore. The sounds of laughter, the smell of food, and the sight of colorful rides make it an exciting outing for everyone.",
+                "[You]: \"This should be a great place for the pups to have some fun.\"",
+                "As you walk through the fairgrounds, the puppies are full of energy, darting around to sniff and investigate everything in sight. They’re especially fascinated by the animals in the petting zoo.",
+                "[You]: \"Stay close, everyone. There’s a lot to see, but we don’t want to get separated.\"",
+                "Suddenly, a chicken escapes from the petting zoo, flapping its wings wildly as it runs across the fairgrounds. One of the puppies catches sight of it and, without hesitation, takes off after the chicken, barking excitedly.",
+                "[You]: \"No! Come back!\"",
+                "Despite your calls, the puppy is determined to catch the chicken, weaving through the crowd and out of your sight. You try to follow, but the fairgrounds are crowded, and it’s easy to lose track of the tiny pup.",
+                "[You]: \"Where did they go? I can’t see them anywhere!\"",
+                "Panic starts to set in as you search for the puppy, your heart racing with worry. The once-fun outing has taken a sudden, stressful turn, and you’re desperate to find the little one before they get into more trouble."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 163,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -2,
+                            "reasoning": "The anxiety and fear of losing one of the puppies in the crowded fairgrounds dampens the joy of the outing."
+                        },
+                        {
+                            "stat": "agility",
+                            "value": -1,
+                            "reasoning": "The frantic chase through the fairgrounds leaves you exhausted, showing the toll it takes on your energy."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 162,
+            "image": "chapter-162.png",
+            "title": "The Search Begins",
+            "story": [
+                "After the puppy disappeared into the bushes, you wait anxiously for a few minutes, hoping to see him come bounding back out with the ball in his mouth. But as the seconds tick by, there’s still no sign of him.",
+                "[You]: \"He should have been back by now... something’s not right.\"",
+                "A wave of worry washes over you as you decide to take action. You plunge into the thick bushes, pushing through the branches and leaves, determined to find your lost puppy. The greenery closes in around you, making it difficult to see much beyond a few feet.",
+                "[You]: \"Where are you? Come on, little one... please be okay.\"",
+                "After a few moments of searching, you spot the ball lying on the ground, but the puppy is nowhere to be seen. The sight of the abandoned ball only deepens your concern.",
+                "[You]: \"The ball is here... but where is he?\"",
+                "Your mind races with possibilities as you continue your search. The dense underbrush makes it hard to move quickly, and every rustle of leaves or snap of a twig sets your heart pounding.",
+                "[You]: \"I can’t just leave him out here... I have to find him.\"",
+                "You’re faced with a decision: should you start barking to try to call him back, or keep searching silently, hoping to catch sight of him deeper in the bushes?"
+            ],
+            "options": [
+                {
+                    "text": "Start Barking For Him",
+                    "nextChapter": 165,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -1,
+                            "reasoning": "The growing anxiety of the situation slightly dampens your spirits."
+                        },
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "Deciding to use your voice to call for the puppy shows a smart and practical approach to the situation."
+                        }
+                    ]
+                },
+                {
+                    "text": "Keep Looking",
+                    "nextChapter": 164,
+                    "stats": [
+                        {
+                            "stat": "agility",
+                            "value": -1,
+                            "reasoning": "The physical effort of continuing the search in dense bushes takes a toll on your energy."
+                        },
+                        {
+                            "stat": "happiness",
+                            "value": -1,
+                            "reasoning": "The uncertainty of the search without any response heightens your worry and fear."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 163,
+            "image": "chapter-163.png",
+            "title": "The Chase",
+            "story": [
+                "You sprint in the direction where you last saw the puppy chasing the chicken. Your heart is racing, and the fairground's lively atmosphere starts to blur as your focus narrows on finding the little one.",
+                "[You]: \"I have to find him... where did they go?\"",
+                "As you run, you scan the area, looking for any sign of the puppy or the chicken. The crowds and activity around you make it hard to see far ahead, and you begin to feel a rising sense of panic.",
+                "[You]: \"He couldn’t have gone far... but I don’t see him anywhere!\"",
+                "Despite your best efforts, the puppy seems to have disappeared into the chaos of the fairgrounds. Every second that passes without finding him makes your worry grow deeper.",
+                "[You]: \"This isn’t good... what if he’s hurt, or lost?\"",
+                "You’re faced with a tough decision: should you start barking to try and call the puppy back, or continue searching on your own, hoping to spot him before it’s too late?"
+            ],
+            "options": [
+                {
+                    "text": "Start Barking For Him",
+                    "nextChapter": 165,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -1,
+                            "reasoning": "The growing worry about the puppy’s safety slightly diminishes your happiness."
+                        },
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "Deciding to use your voice to call for the puppy demonstrates quick thinking and problem-solving."
+                        }
+                    ]
+                },
+                {
+                    "text": "Keep Looking",
+                    "nextChapter": 164,
+                    "stats": [
+                        {
+                            "stat": "agility",
+                            "value": -1,
+                            "reasoning": "The continued physical effort of searching for the puppy wears you down."
+                        },
+                        {
+                            "stat": "happiness",
+                            "value": -1,
+                            "reasoning": "The increasing fear of not finding the puppy adds to your anxiety."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 164,
+            "image": "chapter-164.png",
+            "title": "Hope Fades",
+            "story": [
+                "Determined to find the lost puppy, you continue your search, pushing through the fairgrounds as the sun begins to set. The once vibrant atmosphere of the fair starts to quiet down, and the growing darkness adds to your anxiety.",
+                "[You]: \"I have to keep looking... but it’s getting so hard to see anything.\"",
+                "As the light fades, your hope starts to wane. Every shadow feels like it might be hiding the puppy, but each time you look closer, there’s nothing there. The realization that you might not find him tonight begins to weigh heavily on you.",
+                "[You]: \"He’s out there somewhere... but I can’t see a thing in this darkness.\"",
+                "Despite your best efforts, the search becomes more difficult with each passing minute. The fairgrounds, once full of life, are now almost deserted, and the silence is only broken by the distant sounds of the last few stragglers leaving.",
+                "[You]: \"I don’t want to give up, but I can’t do this in the dark. I’ll have to come back tomorrow.\"",
+                "Reluctantly, you make your way back to the rest of the group, your heart heavy with worry. The night feels colder, and the walk back seems longer, knowing that the puppy is still out there, somewhere.",
+                "[You]: \"I’ll find him... I just need to rest and try again in the morning.\"",
+                "Determined to resume the search at first light, you resolve to return alone the next day, hoping that the morning will bring better luck in finding your lost puppy."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 167,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -2,
+                            "reasoning": "The emotional toll of not finding the puppy before nightfall deeply affects your happiness."
+                        },
+                        {
+                            "stat": "strength",
+                            "value": -1,
+                            "reasoning": "The exhaustion from searching through the evening leaves you physically drained."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 165,
+            "image": "chapter-165.png",
+            "title": "A Surprise Discovery",
+            "story": [
+                "Desperate to find your lost puppy, you start barking loudly, hoping that your voice will reach him wherever he is. Your barks echo through the fairgrounds, drawing the attention of a few passersby.",
+                "[You]: \"Come on, little one... where are you?\"",
+                "After a few moments, a small child appears, cautiously approaching you with wide eyes. He seems curious about your barking and walks over to see what’s going on.",
+                "[Child]: \"Hey there, what’s wrong? You’re making a lot of noise.\"",
+                "The child bends down to your level, and you notice something moving in his backpack. With a gentle hand, he unzips it and reveals your missing puppy, nestled comfortably inside. The puppy’s tail wags excitedly as it sees you, clearly happy but unaware of the worry it caused.",
+                "[You]: \"There you are! I’ve been looking all over for you!\"",
+                "The child smiles, clearly relieved that you’ve found your friend.",
+                "[Child]: \"I saw him running around and didn’t want him to get lost, so I put him in my backpack. I was just looking for someone to give him back to.\"",
+                "You feel a wave of relief wash over you as you nuzzle the puppy, grateful to the child for keeping him safe. The puppy seems happy to be reunited, wagging its tail and licking your face.",
+                "[You]: \"Thank you for keeping him safe. I was so worried!\"",
+                "The child stands up, giving you a final pat before heading back to his family. With the puppy safe and sound, you can finally breathe easy, knowing that your little one is back where he belongs."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 166,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Finding the lost puppy and knowing he was safe all along brings a significant boost to your happiness."
+                        },
+                        {
+                            "stat": "intelligence",
+                            "value": 1,
+                            "reasoning": "The decision to bark and draw attention proves to be a smart choice, leading to the safe return of the puppy."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 166,
+            "image": "chapter-166.png",
+            "title": "A Tough Decision",
+            "story": [
+                "With the lost puppy safely back in your care, you can’t help but feel a mix of relief and frustration. As you look at the little one, who’s now happily wagging his tail, you start to scold him for running away.",
+                "[You]: \"You had me worried sick! Don’t you ever do that again!\"",
+                "The puppy looks up at you with big, innocent eyes, and despite your stern words, you find it impossible to stay mad. The joy of having him back far outweighs any anger you felt.",
+                "[You]: \"I’m just glad you’re okay... but this was all too much.\"",
+                "However, as the adrenaline wears off, you start to realize how exhausting and nerve-wracking this experience was. Raising these puppies has been a joy, but it’s also been a challenge—one that’s beginning to take its toll on you.",
+                "[You]: \"They deserve the best, and I’m not sure I can keep up with them much longer.\"",
+                "The thought crosses your mind that maybe, just maybe, these puppies would be better off with a new family. They’re still young, full of energy, and have their whole lives ahead of them. A new home could give them the attention and care they need to thrive.",
+                "[You]: \"But how can I let them go? I’ve grown so attached...\"",
+                "You’re torn between keeping them with you, where you know they’re loved, and finding them a new home where they might be better cared for. It’s a difficult decision, one that weighs heavily on your heart."
+            ],
+            "options": [
+                {
+                    "text": "Take them to a better home",
+                    "nextChapter": 165,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -2,
+                            "reasoning": "The thought of giving them up, even for their benefit, brings sadness and doubt."
+                        },
+                        {
+                            "stat": "strength",
+                            "value": 1,
+                            "reasoning": "Recognizing your limits and making a tough decision shows inner strength and self-awareness."
+                        }
+                    ]
+                },
+                {
+                    "text": "Keep Raising Them",
+                    "nextChapter": 164,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 1,
+                            "reasoning": "The bond you’ve formed with the puppies brings joy, even in the face of challenges."
+                        },
+                        {
+                            "stat": "strength",
+                            "value": -1,
+                            "reasoning": "The physical and emotional demands of raising the puppies continue to take a toll on your energy."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 167,
+            "image": "chapter-167.png",
+            "title": "The Long Search",
+            "story": [
+                "The next morning, with the first light of dawn, you make your way back to the spot where you lost the puppy. The fairgrounds are quiet and empty now, a stark contrast to the bustling activity of the previous day.",
+                "[You]: \"I have to find him... I can’t just leave him out here alone.\"",
+                "You search tirelessly, retracing your steps from the day before. Hours pass as you comb through every bush, every corner, hoping for any sign of the little one. But the more you search, the more hopeless you start to feel.",
+                "[You]: \"Where could he have gone? I’ve looked everywhere...\"",
+                "The thought crosses your mind that maybe the puppy found his way to a nice family, someone who saw him and decided to take him in. It’s a comforting thought, but it doesn’t ease the ache in your heart.",
+                "[You]: \"I just hope he’s safe, wherever he is... and not lost or scared.\"",
+                "As you continue your search, you come across a cliffside overlooking the area. Desperation drives you to the edge, barking loudly in hopes that your voice will somehow reach the puppy, wherever he may be.",
+                "[You]: \"Please, if you can hear me, come back!\"",
+                "But as you bark, you lose your footing on the loose gravel. Before you can react, you slip, tumbling down the steep cliffside. The fall is harsh, and by the time you reach the bottom, you’re too injured to move.",
+                "[You]: \"No... not like this...\"",
+                "Pain radiates through your body, and you realize with a sinking heart that you can’t get back up. The world around you begins to fade, and as darkness closes in, you take one last breath, hoping that your lost puppy is safe, wherever he is."
+            ],
+            "options": [
+                {
+                    "text": "Restart",
+                    "nextChapter": -1,
+                    "reasoning": "While searching for the puppy, you lost your footing on a cliffside, leading to a fatal fall."
+                }
+            ]
+        },
+        {
+            "chapter": 168,
+            "image": "chapter-168.png",
+            "title": "A Modest Life",
+            "story": [
+                "After your win at the casino, you decide to take your modest earnings and invest in something more stable—a small house to call your own. It’s not much, but it’s enough to give you a sense of security and comfort.",
+                "[You]: \"This will do nicely. A place to rest, a place to call home.\"",
+                "Settling into your new home, you enjoy the peace and quiet it offers. The days are simple, filled with routine walks around the neighborhood, and the occasional visit to the park. Life is slower now, but it’s a welcome change after the hustle of the casino.",
+                "[You]: \"I may not be rich, but I have what I need. That’s enough.\"",
+                "As time passes, you watch the seasons change from your window. Your once energetic spirit begins to wane, and you find yourself spending more time resting, content with the quiet life you’ve built.",
+                "[You]: \"It’s nice to just sit here and watch the world go by...\"",
+                "Eventually, your earnings from the casino begin to run out. The small nest egg that had kept you going dwindles, and you start to feel the weight of your years. The house, once a symbol of your modest success, now feels a bit emptier as your energy fades.",
+                "[You]: \"I’ve done well with what I had... but I’m getting old now.\"",
+                "With each passing day, you find yourself reminiscing more and more about the adventures you’ve had, the choices you made, and the simple joys of life. Though your earnings are nearly gone, you feel a sense of peace knowing that you’ve made the most of what you had."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 121,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 1,
+                            "reasoning": "Settling down and living a peaceful, modest life brings a sense of contentment and fulfillment."
+                        },
+                        {
+                            "stat": "strength",
+                            "value": -2,
+                            "reasoning": "The passage of time and the slowing down of life lead to a natural decline in physical strength."
+                        }
+                    ]
+                }
+            ]
+        },
+        {},
+        {},
+        {
+            "chapter": 171,
+            "image": "chapter-171.png",
+            "title": "A Parent's Resolve",
+            "story": [
+                "After much thought, you decide that you simply can’t give up on the puppies. They’ve become a part of you, and the bond you’ve formed with them is too strong to break. As challenging as it may be, you know that you have what it takes to be a great parent.",
+                "[You]: \"I’ve come this far with them... I can’t let go now. They need me, and I need them.\"",
+                "Looking at their innocent faces, you’re filled with a renewed sense of determination. The struggles and worries fade as you focus on the love and joy they bring into your life. Every wag of their tails, every playful bark reminds you of why you decided to keep them.",
+                "[You]: \"We’re a family, and families stick together, no matter what.\"",
+                "The puppies continue to grow under your care, and with each passing day, your bond with them deepens. You watch them develop their own personalities, each one unique and full of life, and you feel a swell of pride.",
+                "[You]: \"They’re growing up so fast... and I’m going to be here for every step of the way.\"",
+                "You’re no longer worried about the challenges of raising them. Instead, you embrace the responsibility with open arms, knowing that the love and loyalty you share will see you through any difficulties.",
+                "[You]: \"We’ve got this. Together, we can handle anything.\"",
+                "Your resolve is firm. You’re committed to raising these puppies, to giving them the best life possible, and to being the parent they need and deserve."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 174,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "The decision to keep the puppies and the bond you’ve formed with them brings a deep sense of happiness and fulfillment."
+                        },
+                        {
+                            "stat": "strength",
+                            "value": 1,
+                            "reasoning": "Your renewed determination and commitment to raising the puppies gives you a boost in strength and resilience."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 172,
+            "image": "chapter-172.png",
+            "title": "A Difficult Goodbye",
+            "story": [
+                "After much consideration, you come to the realization that maybe you just weren’t cut out for parenthood. The demands of raising the puppies have taken a toll, and you start to wonder if they might be better off with someone else.",
+                "[You]: \"It’s not that I don’t love them... but they deserve more than I can give right now.\"",
+                "With a heavy heart, you decide to take the puppies to a reputable adoption center. The staff there is warm and welcoming, understanding the difficulty of your decision. They assure you that the puppies will be well cared for and that they’ll soon find loving homes.",
+                "[Adoption Center Worker]: \"Don’t worry, corgis are in high demand. These little ones will have new families in no time.\"",
+                "Knowing that the puppies will end up in good homes brings some comfort. The staff also lets you know that once the puppies are adopted, you’ll be able to visit them regularly, keeping a connection with them even after they’re gone.",
+                "[Adoption Center Worker]: \"You’ll still be a part of their lives. We’ll make sure you can see them often.\"",
+                "As you say your goodbyes, the puppies look up at you with trusting eyes, unaware of the changes ahead. It’s a bittersweet moment, but you know it’s for the best.",
+                "[You]: \"I’m going to miss you all so much... but this is what’s best for you. I’ll visit you whenever I can.\"",
+                "Leaving the adoption center, there’s a sense of relief mixed with sadness. You’re confident that the puppies will be happy in their new homes, and you take solace in knowing that you’ll still get to see them from time to time."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 173,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": -1,
+                            "reasoning": "The sadness of parting with the puppies brings a temporary drop in happiness, though it’s tempered by knowing they’ll be well cared for."
+                        },
+                        {
+                            "stat": "strength",
+                            "value": 1,
+                            "reasoning": "The difficult decision to do what’s best for the puppies, despite the personal cost, shows inner strength and selflessness."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 173,
+            "image": "chapter-173.png",
+            "title": "The Passing of Time",
+            "story": [
+                "As the days turned into weeks and the weeks into months, you often thought about the puppies and how they were adjusting to their new lives. Every so often, the adoption center would send you updates, along with photos of them in their new homes.",
+                "[You]: \"They look so happy... it’s good to know they’re doing well.\"",
+                "With time, the sadness of parting gave way to a sense of peace. You knew you made the right decision, and seeing them thrive in their new environments confirmed it. Occasionally, you’d visit them, and the joy of those reunions warmed your heart.",
+                "[You]: \"It’s wonderful to see how much they’ve grown. They’ve really come into their own.\"",
+                "Years passed, and the once-small puppies became full-grown dogs, each one flourishing in their respective homes. Despite being separated, the bond you shared never faded. They would often visit you, their tails wagging and eyes bright with recognition.",
+                "[You]: \"You’re all so grown up now... and yet, you’re still my little ones.\"",
+                "Now, as you’ve entered your later years, those visits have become even more meaningful. The puppies you once raised have become your caretakers in a way, checking in on you, bringing you comfort and companionship as you age.",
+                "[You]: \"I’m so glad we stayed in touch. You’re still a big part of my life, even after all this time.\"",
+                "The passage of time has been kind, and the decision you made all those years ago continues to bring you peace and joy. The puppies, now grown, have not forgotten the love you gave them, and they repay it with their loyalty and care."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 175,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "The long-lasting bond with the puppies, even after they’ve grown up, brings deep happiness and fulfillment."
+                        },
+                        {
+                            "stat": "strength",
+                            "value": 1,
+                            "reasoning": "The support and care from the puppies in your later years give you the strength to face the challenges of aging."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 174,
+            "image": "chapter-174.png",
+            "title": "Roles Reversed",
+            "story": [
+                "Time has a way of moving faster than you realize. The puppies you once nurtured and cared for have grown into strong, capable dogs, each one with their own unique personality. As they matured, so did you, though the years have taken a toll.",
+                "[You]: \"They were so small once... and now look at them—so grown up, so independent.\"",
+                "The roles that were once so clear have begun to shift. The energy and vigor you once had are now memories, replaced by a slower pace and the aches of age. But the puppies, now fully grown, haven’t forgotten the care and love you gave them.",
+                "[You]: \"I never thought the day would come when they’d be the ones taking care of me.\"",
+                "As you’ve become older and more frail, the dogs have naturally stepped into a new role, ensuring that you’re never alone. They stay close, watching over you with a loyalty and devotion that mirrors the care you once provided them.",
+                "[You]: \"They’re always there, making sure I’m okay. I couldn’t have asked for better companions.\"",
+                "Whether it’s bringing you comfort on tough days or simply being by your side, the dogs have taken on the responsibility of looking after you. It’s a role they’ve accepted without hesitation, as if they understand just how important it is.",
+                "[You]: \"They’ve grown into such wonderful dogs... and now, they’re my guardians.\"",
+                "The transition from caretaker to being cared for was subtle, but the love that binds you all remains as strong as ever. The puppies you raised are now returning the favor, making sure that your final years are filled with the same love and care you gave them."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 175,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "Seeing the puppies grow into caring dogs who now look after you brings deep satisfaction and joy."
+                        },
+                        {
+                            "stat": "strength",
+                            "value": 1,
+                            "reasoning": "The support and care from the grown puppies give you the strength to face the challenges of aging."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": 175,
+            "image": "chapter-175.png",
+            "title": "A Life Well Lived",
+            "story": [
+                "With each passing day, you grow a little older, a little more frail, but your heart remains full. The puppies you raised, now loyal companions, continue to stay by your side through thick and thin. Their presence brings you comfort as you reflect on the life you’ve lived.",
+                "[You]: \"I’ve seen so much, done so much... and through it all, they’ve been here with me.\"",
+                "As time moves forward, you begin to embrace the inevitable changes that come with aging. The strength you once had has faded, replaced by a quiet acceptance of the life you’ve led. The memories you’ve made, the love you’ve shared—it all brings you peace.",
+                "[You]: \"There’s nothing more I could have asked for. I’ve lived a good life, surrounded by those I love.\"",
+                "The days are slower now, filled with moments of quiet reflection. The puppies, always attentive, seem to understand your needs before you even realize them yourself. Their gentle nudges and warm presence remind you that you’re never truly alone.",
+                "[You]: \"They’ve grown into such amazing dogs... and I’m so proud of them.\"",
+                "Even as your body grows weaker, your spirit remains strong. You take solace in the fact that you’ve lived a life full of love and adventure, and that your puppies have been with you every step of the way. They’ve become your greatest source of happiness in your final years.",
+                "[You]: \"I couldn’t have asked for a better life... or better companions.\"",
+                "As you look back on your journey, you find yourself at peace, knowing that you’ve given and received all the love you could. With the puppies by your side, you’re ready to embrace whatever comes next, content in the knowledge that you’ve lived a life well worth living."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "nextChapter": 101,
+                    "stats": [
+                        {
+                            "stat": "happiness",
+                            "value": 2,
+                            "reasoning": "The unwavering loyalty and love from the puppies bring a deep sense of happiness and contentment."
+                        },
+                        {
+                            "stat": "strength",
+                            "value": -1,
+                            "reasoning": "The natural decline in physical strength as you age is balanced by the emotional strength gained from your fulfilling life."
+                        }
+                    ]
+                }
+            ]
         }
-
-
-
-
-
     ]
 }

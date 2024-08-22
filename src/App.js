@@ -49,11 +49,7 @@ function App() {
   }, []);
 
   const handleSongEnd = () => {
-    if (currentSongIndex < songs.length - 1) {
-      setCurrentSongIndex(currentSongIndex + 1);
-    } else {
-      setCurrentSongIndex(0); // Loop back to the first song or handle end of playlist
-    }
+    setCurrentSongIndex((prevIndex) => (prevIndex + 1) % songs.length);
   };
 
   useEffect(() => {
@@ -70,7 +66,7 @@ function App() {
 
   const handleNext = (name) => {
     setStats(startingStats);
-    setStoryList([])
+    setStoryList([]);
     setName(name);
   };
 
