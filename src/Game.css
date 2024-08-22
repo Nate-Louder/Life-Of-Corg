@@ -31,12 +31,12 @@
 .story-title-wrapper {
     width: 100%;
     background-color: white;
+    padding: 6px;
 }
 
 .story-title {
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .sthory-image {

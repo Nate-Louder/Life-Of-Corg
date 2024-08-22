@@ -10,20 +10,19 @@ import React, { useState } from 'react';
 import './ModalStuff.css';
 
 const modalStyle = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    boxShadow: 24,
-    p: 4,
-    borderRadius: 10, // Rounded edges
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: "6px"
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  boxShadow: 24,
+  p: 4,
+  borderRadius: 10, // Rounded edges
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "6px"
 };
 
 export default function ModalStuff({ open, choice, onClose }) {
@@ -78,7 +77,7 @@ export default function ModalStuff({ open, choice, onClose }) {
 
   const getTitile = () => {
     if (choice.nextChapter === -1) {
-        return "Game Over";
+      return "Game Over";
     }
     if (choice.stats.length < 1) {
       return "No Stats were Changed";
@@ -94,11 +93,11 @@ export default function ModalStuff({ open, choice, onClose }) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={modalStyle}>
-          <Typography id="modal-modal-title" variant="h6" component="h2" className="modal-title">
+        <Box sx={{ ...modalStyle, backgroundColor: choice.nextChapter === -1 ? "#1f1f1f" : "#fff" }}>
+          <Typography id="modal-modal-title" variant="h4" sx={{ color: choice.nextChapter === -1 ? "red" : "#464646", fontWeight: 700 }} className="modal-title">
             {getTitile()}
           </Typography>
-          {choice.stats.map((stat, index) => (
+          {choice?.stats.map((stat, index) => (
             <div key={index} className="stat-change">
               <Typography id="modal-modal-description" sx={{ mt: 2 }} className="stat-description">
                 <Icon>{getIcon(stat.stat)}</Icon>: {stat.value > 0 ? '+' : ''}
@@ -107,14 +106,14 @@ export default function ModalStuff({ open, choice, onClose }) {
               <Typography id="modal-modal-description" sx={{ mt: 2 }} className="stat-reasoning">
                 {stat.reasoning}
               </Typography>
-             
+
             </div>
           ))}
-           {choice.nextChapter === -1 ?
-                <Typography id="modal-modal-description" sx={{ mt: 2, textAlign: "center" }} className="stat-reasoning">
-                  {choice.reasoning}
-                </Typography> : null
-              }
+          {choice.nextChapter === -1 ?
+            <Typography id="modal-modal-description" sx={{ mt: 2, textAlign: "center", color: "white" }} className="stat-reasoning">
+              {choice.reasoning}
+            </Typography> : null
+          }
           <Button variant="contained" color="primary" onClick={handleClose} className="continue-button">
             {choice.nextChapter === -1 ? "End Game" : "Continue"}
           </Button>

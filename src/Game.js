@@ -57,14 +57,14 @@ const Game = ({ name, stats, setStats, setProgress, setStoryList }) => {
     return (
         <div className={`Game ${getBgImage()}`}>
             <StatTracker stats={stats} />
-            <Card className="story-card" sx={{ width: '100vw', height: '100vh', overflow: "visible", borderRadius: "20px", backgroundImage: `url(${currentImage})` }}>
+            <Card className="story-card" sx={{ width: '100vw', height: '100vh', overflow: "visible", borderRadius: "20px", backgroundImage: `url(${currentImage})`, backgroundRepeat: "no-repeat", backgroundSize: 'cover' }}>
                 <CardContent className="story-title-wrapper">
-                    <Typography variant="h4" fontWeight={700} className="story-title" color={'#FF8E53'}>
+                    <Typography variant="h4" fontWeight={800} className="story-title" color={'#464646'}>
                         {currentTitle}
                     </Typography>
                 </CardContent>
                 <div className="story-wrapper">
-                    <CardContent>
+                    <CardContent sx={{ padding: "0px" }}>
                         <StoryTeller story={currentStory} name={name} onStoryEnd={() => { setOptionsAreAvailable(true) }} />
                     </CardContent>
                     {optionsAreAvailable && (
