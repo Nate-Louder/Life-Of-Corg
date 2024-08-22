@@ -4971,7 +4971,7 @@ export const story = {
             "image": "chapter-164.png",
             "title": "Hope Fades",
             "story": [
-                "Determined to find the lost puppy, you continue your search, pushing through the fairgrounds as the sun begins to set. The once vibrant atmosphere of the fair starts to quiet down, and the growing darkness adds to your anxiety.",
+                "Determined to find the lost puppy, you continue your search as the sun begins to set. The once vibrant atmosphere of the day starts to quiet down, and the growing darkness adds to your anxiety.",
                 "[You]: \"I have to keep looking... but it’s getting so hard to see anything.\"",
                 "As the light fades, your hope starts to wane. Every shadow feels like it might be hiding the puppy, but each time you look closer, there’s nothing there. The realization that you might not find him tonight begins to weigh heavily on you.",
                 "[You]: \"He’s out there somewhere... but I can’t see a thing in this darkness.\"",

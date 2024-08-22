@@ -26,7 +26,6 @@ function App() {
     `${process.env.PUBLIC_URL}/good-life.mp3`,
     `${process.env.PUBLIC_URL}/beauty-day.mp3`,
     `${process.env.PUBLIC_URL}/unwritten.mp3`,
-    `${process.env.PUBLIC_URL}/my-life.mp3`,
     `${process.env.PUBLIC_URL}/green-day.mp3`,
     `${process.env.PUBLIC_URL}/comes-sun.mp3`,
     `${process.env.PUBLIC_URL}/life-is-a-highway.mp3`,
